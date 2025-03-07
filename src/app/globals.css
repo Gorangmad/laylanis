@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Gin";
+  src: url("/fonts/Gin-Regular.woff2") format("woff2"),
+    url("/fonts/Gin-Regular.woff") format("woff");
+  /* font-weight: normal; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("ttf");
+  /* font-weight: normal; */
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Gin", sans-serif;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";

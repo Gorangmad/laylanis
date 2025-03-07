@@ -9,13 +9,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed w-full top-0 z-[100]">
+      <header className="absolute w-full top-0 z-[100]">
         {/* Background with transition */}
         <div
           className={`absolute inset-0 transition-all duration-300 ${
-            isMenuOpen
-              ? "bg-black"
-              : "bg-gradient-to-b from-black/80 to-transparent"
+            isMenuOpen ? "bg-black" : "bg-gradient-to-b  to-transparent"
           }`}
         />
 
@@ -83,7 +81,7 @@ const Header = () => {
               className="bg-transparent text-red-500 border-2 border-red-500 px-8 py-3 rounded-sm 
               hover:bg-red-500 hover:text-[#f7f1e8] transition-all duration-300 uppercase tracking-wider text-[16px] font-medium"
             >
-              Get in Touch
+              <button>Get in Touch</button>
             </Link>
           </nav>
         </div>

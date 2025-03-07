@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="static flex overflow-hidden w-full h-auto min-h-screen py-20 lg:py-40 justify-center items-center font-montserrat text-[#f7f1e8] relative">
+    <section className=" flex overflow-hidden w-full    h-[100vh] py-20 lg:py-40 justify-center items-center font-montserrat text-[#f7f1e8] ">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 w-full min-h-[200vh] z-0">
+      <div className="absolute inset-0 w-full  h-[100vh] z-0">
         <Image
           src="/hero-bg.jpeg"
           alt="Premium meat on wooden board"
@@ -17,9 +17,9 @@ const Hero = () => {
           quality={100}
         />
         {/* Noise texture overlay using CSS */}
-        <div className="absolute inset-0 w-full h-full opacity-[0.15] mix-blend-overlay bg-[linear-gradient(to_right,#ffffff33_1px,transparent_1px),linear-gradient(to_bottom,#ffffff33_1px,transparent_1px)] bg-[size:4px_4px]" />
+        {/* <div className="absolute inset-0 w-full h-full opacity-[0.15] mix-blend-overlay bg-[linear-gradient(to_right,#ffffff33_1px,transparent_1px),linear-gradient(to_bottom,#ffffff33_1px,transparent_1px)] bg-[size:4px_4px]" /> */}
         {/* Dark gradient overlay */}
-        <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black/25 via-black/20 to-black/25" />
+        {/* <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-black/25 via-black/20 to-black/25" /> */}
       </div>
 
       {/* Content Container */}
@@ -40,7 +40,7 @@ const Hero = () => {
           <p className="text-red-500 text-[3.2vw] lg:text-[1.5vw] mb-3 lg:mb-4 font-medium tracking-wide uppercase">
             COSTA DEL SOL
           </p>
-          <h1 className="text-[#f7f1e8] text-[7vw] lg:text-[4.5vw] font-bold mb-4 lg:mb-6 leading-tight uppercase">
+          <h1 className="text-[#f7f1e8] font-gin text-[7vw] lg:text-[4.5vw] font-bold mb-4 lg:mb-6 leading-tight uppercase">
             PREMIUM QUALITY BUTCHERS.
           </h1>
           <p className="text-[#f7f1e8]/90 text-[3.8vw] md:text-[2.2vw] lg:text-[1.4vw] mb-6 lg:mb-8 max-w-lg mx-auto lg:mx-0">
@@ -50,10 +50,10 @@ const Hero = () => {
           <Link
             href="/products"
             className="inline-block bg-transparent text-red-500 border-2 border-red-500 
-            px-5 lg:px-8 py-2.5 lg:py-3 rounded-sm hover:bg-red-500 hover:text-[#f7f1e8] transition-all 
-            duration-300 uppercase tracking-wider text-[3vw] md:text-[1.8vw] lg:text-[1.2vw] font-medium"
+              px-5 lg:px-8 py-2.5 lg:py-3 rounded-sm hover:bg-red-500 hover:text-[#f7f1e8] transition-all 
+              duration-300 uppercase tracking-wider text-[3vw] md:text-[1.8vw] lg:text-[1.2vw] font-medium"
           >
-            View Products
+            <button>View Products</button>
           </Link>
         </div>
       </div>
