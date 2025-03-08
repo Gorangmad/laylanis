@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gin: ["Gin", "sans-serif"],
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
       },
     },
   },

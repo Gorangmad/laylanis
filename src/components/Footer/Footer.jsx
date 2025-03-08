@@ -24,8 +24,8 @@ const Footer = () => {
           <div className="max-w-7xl mx-auto px-4 lg:px-8 py-16">
             <div className="flex justify-center">
               <Image
-                src="/logo.svg"
-                alt="Liam's Quality Meats"
+                src="/images/logo-2.png"
+                alt="Logo"
                 width={150}
                 height={150}
                 className="mb-6"

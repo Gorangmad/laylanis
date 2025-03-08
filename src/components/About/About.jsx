@@ -11,7 +11,7 @@ const About = () => {
           <div className="w-full h-full">
             <div className="relative w-full aspect-[1/1] rounded-lg overflow-hidden border-4 border-[#f7f1e8]">
               <Image
-                src="/about-1.jpg"
+                src="/images/about-2.jpg"
                 alt="Liam and Lynda - Your Family Butcher"
                 fill
                 className="object-cover"
