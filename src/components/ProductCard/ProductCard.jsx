@@ -18,7 +18,7 @@ const products = [
     description:
       "Known for its rich marbling and exceptional flavor, ribeye is perfect for pan-searing or grilling to medium-rare perfection.",
     price: 32.95,
-    image: "/images/products/product1.png",
+    image: "/images/products/product2.png",
     perfectFor: ["BBQ", "GRILLING"],
   },
   {
@@ -27,27 +27,27 @@ const products = [
     description:
       "A premium cut featuring both tenderloin and strip steak, separated by a T-shaped bone. Ideal for grilling or broiling.",
     price: 34.95,
-    image: "/images/products/product1.png",
+    image: "/images/products/product3.png",
     perfectFor: ["BBQ", "GRILLING"],
   },
-  {
-    id: 4,
-    name: "TENDERLOIN",
-    description:
-      "The most tender cut of beef, perfect for special occasions. Best served medium-rare to maintain its buttery texture.",
-    price: 39.95,
-    image: "/images/products/product1.png",
-    perfectFor: ["BBQ", "GRILLING"],
-  },
-  {
-    id: 5,
-    name: "FLANK STEAK",
-    description:
-      "A lean and flavorful cut that's perfect for marinating. Best grilled and sliced against the grain for maximum tenderness.",
-    price: 24.95,
-    image: "/images/products/product1.png",
-    perfectFor: ["BBQ", "GRILLING"],
-  },
+  // {
+  //   id: 4,
+  //   name: "TENDERLOIN",
+  //   description:
+  //     "The most tender cut of beef, perfect for special occasions. Best served medium-rare to maintain its buttery texture.",
+  //   price: 39.95,
+  //   image: "/images/products/product1.png",
+  //   perfectFor: ["BBQ", "GRILLING"],
+  // },
+  // {
+  //   id: 5,
+  //   name: "FLANK STEAK",
+  //   description:
+  //     "A lean and flavorful cut that's perfect for marinating. Best grilled and sliced against the grain for maximum tenderness.",
+  //   price: 24.95,
+  //   image: "/images/products/product1.png",
+  //   perfectFor: ["BBQ", "GRILLING"],
+  // },
 ];
 
 const ProductCard = () => {
@@ -78,7 +78,7 @@ const ProductCard = () => {
 
         {/* Content */}
         <div className="relative z-10 h-full py-16 md:py-0 lg:pb-12">
-          <div className="max-w-[1400px] mx-auto px-4 md:px-8 h-full">
+          <div className="max-w-[1400px] mx-auto  md:px-4 h-full">
             {/* <div className="text-center py-8">
               <h2 className="text-[#E85B4E]  text-xl md:text-2xl lg:text-4xl font-bold mb-5 md:mb-8 uppercase tracking-wide leading-normal">
                 Customer favorites
@@ -107,9 +107,9 @@ const ProductCard = () => {
                   </p>
 
                   {/* Image */}
-                  <div className="relative w-full aspect-[3/3] max-w-[400px] mx-auto my-8">
+                  <div className="relative w-full aspect-[3/3] max-w-[350px] mx-auto my-8">
                     {/* Navigation Arrows - Mobile */}
-                    <div className="md:hidden  absolute left-0 right-0 top-1/2 -translate-y-1/2 flex justify-between  sm:-mx-6">
+                    <div className="md:hidden absolute left-0 right-0 top-1/2 -translate-y-1/2 flex justify-between  sm:px-0 sm:-mx-6 z-20">
                       <button
                         onClick={prevProduct}
                         className="w-12 h-12 rounded-full border-2 border-[#d94a4a] flex items-center justify-center group hover:bg-[#d94a4a] transition-colors"
@@ -168,6 +168,9 @@ const ProductCard = () => {
                   <p className="text-white text-lg text-center tracking-wide mb-8">
                     FROM €{products[currentProduct].price} PER/KG
                   </p>
+                  <button className="w-full max-w-xs mx-auto block bg-[#d94a4a] text-white py-3 rounded-sm hover:bg-[#b33e3e] transition-colors uppercase tracking-wider text-sm font-medium">
+                    ADD TO CART
+                  </button>
 
                   {/* Perfect For */}
                   <div className="max-w-xs mx-auto">
@@ -208,9 +211,12 @@ const ProductCard = () => {
                   <p className="text-white mb-16 font-light text-sm lg:text-base">
                     {products[currentProduct].description}
                   </p>
-                  <p className="text-white text-sm lg:text-lg tracking-wide">
+                  <p className="text-white text-sm lg:text-lg tracking-wide mb-6">
                     FROM €{products[currentProduct].price} PER/KG
                   </p>
+                  <button className="w-full bg-[#d94a4a] text-white py-3 rounded-sm hover:bg-[#b33e3e] transition-colors uppercase tracking-wider text-sm font-medium">
+                    ADD TO CART
+                  </button>
                 </div>
 
                 {/* Center Column - Product Image */}
