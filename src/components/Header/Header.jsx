@@ -6,6 +6,7 @@ import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isProductsOpen, setIsProductsOpen] = useState(false);
 
   return (
     <>
@@ -13,7 +14,9 @@ const Header = () => {
         {/* Background with transition */}
         <div
           className={`absolute inset-0 transition-all duration-300 ${
-            isMenuOpen ? "bg-black" : "bg-gradient-to-b  to-transparent"
+            isMenuOpen
+              ? "bg-black"
+              : "bg-gradient-to-b from-black/80 to-transparent "
           }`}
         />
 
@@ -32,6 +35,87 @@ const Header = () => {
               />
             </Link>
           </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-12">
+            <Link
+              href="/"
+              className="text-[18px] font-medium hover:text-[#d94a4a] transition-colors tracking-wide"
+            >
+              HOME
+            </Link>
+            {/* Products Dropdown */}
+
+            <Link
+              href="/about-us"
+              className="text-[18px] font-medium hover:text-[#d94a4a] transition-colors tracking-wide"
+            >
+              ABOUT US
+            </Link>
+            <div className="relative group">
+              <div className="flex flex-col items-center">
+                <button className="text-[18px] font-medium hover:text-[#d94a4a] transition-colors tracking-wide">
+                  PRODUCTS
+                </button>
+                {/* Dropdown Cards Container */}
+                <div className="absolute left-1/2 -translate-x-1/2 mt-6 transition-all duration-300 ease-in-out flex gap-4 opacity-0 -translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
+                  {/* Origin Card */}
+                  <div className="w-[280px] bg-[#FFF5EE] rounded-sm p-6 shadow-lg">
+                    <div className="flex flex-col items-center">
+                      <div className="w-16 h-16 mb-4">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="w-full h-full text-[#d94a4a]"
+                          fill="currentColor"
+                        >
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                        </svg>
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-4">
+                        SHOP BY ORIGIN
+                      </h3>
+                      <Link
+                        href="/products/origin"
+                        className="bg-[#d94a4a] text-white px-6 py-2 rounded-sm hover:bg-[#c43c3c] transition-colors duration-300 uppercase tracking-wider text-sm font-medium"
+                      >
+                        VIEW MORE
+                      </Link>
+                    </div>
+                  </div>
+                  {/* Cuts Card */}
+                  <div className="w-[280px] bg-[#FFF5EE] rounded-sm p-6 shadow-lg">
+                    <div className="flex flex-col items-center">
+                      <div className="w-16 h-16 mb-4">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="w-full h-full text-[#d94a4a]"
+                          fill="currentColor"
+                        >
+                          <path d="M19.96 12L22 8.5L19.96 5H14.5L12.5 2H11.5L9.5 5H4.04L2 8.5L4.04 12L2 15.5L4.04 19H9.5L11.5 22H12.5L14.5 19H19.96L22 15.5L19.96 12ZM12 17.5C9.24 17.5 7 15.26 7 12.5C7 9.74 9.24 7.5 12 7.5C14.76 7.5 17 9.74 17 12.5C17 15.26 14.76 17.5 12 17.5Z" />
+                        </svg>
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-4">
+                        SHOP BY CUT
+                      </h3>
+                      <Link
+                        href="/products/cuts"
+                        className="bg-[#d94a4a] text-white px-6 py-2 rounded-sm hover:bg-[#c43c3c] transition-colors duration-300 uppercase tracking-wider text-sm font-medium"
+                      >
+                        VIEW MORE
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <Link
+              href="/contact"
+              className="bg-transparent text-[#d94a4a] border-2 border-[#d94a4a] px-8 py-3 rounded-sm 
+              hover:bg-[#d94a4a] hover:text-[#f7f1e8] transition-all duration-300 uppercase tracking-wider text-[16px] font-medium"
+            >
+              GET IN TOUCH
+            </Link>
+          </nav>
 
           {/* Mobile Menu Button */}
           <button
@@ -55,76 +139,78 @@ const Header = () => {
               }`}
             ></span>
           </button>
+        </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-12">
+        {/* Mobile Menu */}
+        <div
+          className={`md:hidden absolute w-full bg-black transition-all duration-300 ${
+            isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
+        >
+          <div className="px-4 py-6 space-y-4">
             <Link
               href="/"
-              className="text-[18px] font-medium hover:text-red-500 transition-colors tracking-wide"
+              className="block text-white hover:text-[#d94a4a] transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
-              Home
+              HOME
             </Link>
+            <div className="space-y-4">
+              <span className="block text-white">PRODUCTS</span>
+              <div className="grid grid-cols-2 gap-4 pl-4">
+                <Link
+                  href="/products/origin"
+                  className="block bg-[#FFF5EE] p-4 rounded-sm text-center"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <div className="w-8 h-8 mx-auto mb-2">
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="w-full h-full text-[#d94a4a]"
+                      fill="currentColor"
+                    >
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-800 text-sm font-medium">
+                    SHOP BY ORIGIN
+                  </span>
+                </Link>
+                <Link
+                  href="/products/cuts"
+                  className="block bg-[#FFF5EE] p-4 rounded-sm text-center"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <div className="w-8 h-8 mx-auto mb-2">
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="w-full h-full text-[#d94a4a]"
+                      fill="currentColor"
+                    >
+                      <path d="M19.96 12L22 8.5L19.96 5H14.5L12.5 2H11.5L9.5 5H4.04L2 8.5L4.04 12L2 15.5L4.04 19H9.5L11.5 22H12.5L14.5 19H19.96L22 15.5L19.96 12ZM12 17.5C9.24 17.5 7 15.26 7 12.5C7 9.74 9.24 7.5 12 7.5C14.76 7.5 17 9.74 17 12.5C17 15.26 14.76 17.5 12 17.5Z" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-800 text-sm font-medium">
+                    SHOP BY CUT
+                  </span>
+                </Link>
+              </div>
+            </div>
             <Link
-              href="/about"
-              className="text-[18px] font-medium hover:text-red-500 transition-colors tracking-wide"
+              href="/about-us"
+              className="block text-white hover:text-[#d94a4a] transition-colors"
+              onClick={() => setIsMenuOpen(false)}
             >
-              About Us
-            </Link>
-            <Link
-              href="/products"
-              className="text-[18px] font-medium hover:text-red-500 transition-colors tracking-wide"
-            >
-              Products
+              ABOUT US
             </Link>
             <Link
               href="/contact"
-              className="bg-transparent text-red-500 border-2 border-red-500 px-8 py-3 rounded-sm 
-              hover:bg-red-500 hover:text-[#f7f1e8] transition-all duration-300 uppercase tracking-wider text-[16px] font-medium"
+              className="block text-[#d94a4a] border-2 border-[#d94a4a] py-3 text-center rounded-sm hover:bg-[#d94a4a] hover:text-white transition-all duration-300 uppercase tracking-wider text-sm font-medium"
+              onClick={() => setIsMenuOpen(false)}
             >
-              <button>Get in Touch</button>
+              GET IN TOUCH
             </Link>
-          </nav>
-        </div>
-
-        {/* Mobile Navigation Menu */}
-        <div
-          className={`md:hidden relative z-10 transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-          }`}
-        >
-          <nav className="border-t border-white/10">
-            <div className="flex flex-col">
-              <Link
-                href="/"
-                className="text-white text-[18px] font-medium py-4 px-4 hover:bg-white/10 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className="text-white text-[18px] font-medium py-4 px-4 hover:bg-white/10 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                About Us
-              </Link>
-              <Link
-                href="/products"
-                className="text-white text-[18px] font-medium py-4 px-4 hover:bg-white/10 transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Products
-              </Link>
-              <Link
-                href="/contact"
-                className="text-red-500 text-[16px] font-medium py-4 px-4 mx-4 my-4 border-2 border-red-500 rounded-sm
-                hover:bg-red-500 hover:text-[#f7f1e8] transition-all duration-300 uppercase tracking-wider text-center"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Get in Touch
-              </Link>
-            </div>
-          </nav>
+          </div>
         </div>
       </header>
     </>

@@ -37,7 +37,7 @@ const About = () => {
               and say hello, or feel free to get in touch anytime. See you soon.
             </p>
             <Link
-              href="/about"
+              href="/about-us"
               className="inline-block bg-[#8B2921] text-[#f7f1e8] border-2 border-[#8B2921] 
               px-8 py-3 rounded-sm hover:bg-transparent hover:text-[#8B2921] transition-all 
               duration-300 uppercase tracking-wider text-sm font-medium"
