@@ -2,55 +2,201 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-const products = [
-  {
-    id: 1,
-    name: "SIRLOIN STEAK",
-    description:
-      "Sirloin steak is from the loin, perfect for grilling, frying, bbq or as a roasting joint.",
-    price: 27.95,
-    image: "/images/products/product1.png",
-    perfectFor: ["BBQ", "GRILLING"],
-  },
-  {
-    id: 2,
-    name: "RIBEYE STEAK",
-    description:
-      "Known for its rich marbling and exceptional flavor, ribeye is perfect for pan-searing or grilling to medium-rare perfection.",
-    price: 32.95,
-    image: "/images/products/product2.png",
-    perfectFor: ["BBQ", "GRILLING"],
-  },
-  {
-    id: 3,
-    name: "T-BONE STEAK",
-    description:
-      "A premium cut featuring both tenderloin and strip steak, separated by a T-shaped bone. Ideal for grilling or broiling.",
-    price: 34.95,
-    image: "/images/products/product3.png",
-    perfectFor: ["BBQ", "GRILLING"],
-  },
-  // {
-  //   id: 4,
-  //   name: "TENDERLOIN",
-  //   description:
-  //     "The most tender cut of beef, perfect for special occasions. Best served medium-rare to maintain its buttery texture.",
-  //   price: 39.95,
-  //   image: "/images/products/product1.png",
-  //   perfectFor: ["BBQ", "GRILLING"],
-  // },
-  // {
-  //   id: 5,
-  //   name: "FLANK STEAK",
-  //   description:
-  //     "A lean and flavorful cut that's perfect for marinating. Best grilled and sliced against the grain for maximum tenderness.",
-  //   price: 24.95,
-  //   image: "/images/products/product1.png",
-  //   perfectFor: ["BBQ", "GRILLING"],
-  // },
-];
+const allProducts = {
+  hueftsteak: [
+    {
+      id: 1,
+      name: "PREMIUM HÜFTSTEAK",
+      description:
+        "Premium cut from the hip, perfect for grilling. 250g portion.",
+      price: 27.95,
+      image: "/images/products/argentine-ribeye.jpg",
+      perfectFor: ["BBQ", "GRILLING"],
+    },
+    {
+      id: 2,
+      name: "FAMILY HÜFTSTEAK",
+      description:
+        "Larger 400g portion, ideal for sharing or larger appetites.",
+      price: 42.95,
+      image: "/images/products/irish-striploin.jpg",
+      perfectFor: ["BBQ", "FAMILY MEALS"],
+    },
+  ],
+  ribeye: [
+    {
+      id: 1,
+      name: "CLASSIC RIB-EYE",
+      description: "300g of perfectly marbled ribeye steak.",
+      price: 34.95,
+      image: "/images/products/irish-striploin.jpg",
+      perfectFor: ["BBQ", "GRILLING"],
+    },
+    {
+      id: 2,
+      name: "PREMIUM AGED RIB-EYE",
+      description: "28-day aged ribeye steak, 300g of intense flavor.",
+      price: 39.95,
+      image: "/images/products/argentine-ribeye.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+  ],
+  rinderfilet: [
+    {
+      id: 1,
+      name: "CLASSIC RINDERFILET",
+      description:
+        "200g of our most tender cut, perfect for special occasions.",
+      price: 44.95,
+      image: "/images/products/argentine-ribeye.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+    {
+      id: 2,
+      name: "PREMIUM RINDERFILET",
+      description: "Center-cut 250g filet, the crown jewel of tender beef.",
+      price: 54.95,
+      image: "/images/products/irish-striploin.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+  ],
+  roastbeef: [
+    {
+      id: 1,
+      name: "TRADITIONAL ROASTBEEF",
+      description: "1kg joint perfect for Sunday roast.",
+      price: 32.95,
+      image: "/images/products/irish-striploin.jpg",
+      perfectFor: ["ROASTING", "FAMILY MEALS"],
+    },
+    {
+      id: 2,
+      name: "PREMIUM AGED ROASTBEEF",
+      description: "28-day aged 1.2kg joint for superior flavor.",
+      price: 39.95,
+      image: "/images/products/argentine-ribeye.jpg",
+      perfectFor: ["ROASTING", "SPECIAL OCCASIONS"],
+    },
+  ],
+  rumpsteak: [
+    {
+      id: 1,
+      name: "CLASSIC RUMPSTEAK",
+      description: "250g cut with perfect fat marbling.",
+      price: 29.95,
+      image: "/images/products/argentine-ribeye.jpg",
+      perfectFor: ["BBQ", "GRILLING"],
+    },
+    {
+      id: 2,
+      name: "PREMIUM RUMPSTEAK",
+      description: "300g center-cut portion with extra marbling.",
+      price: 34.95,
+      image: "/images/products/irish-striploin.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+  ],
+  tbone: [
+    {
+      id: 1,
+      name: "CLASSIC T-BONE",
+      description:
+        "500g of the perfect combination - tenderloin and strip steak.",
+      price: 39.95,
+      image: "/images/products/american-tomahawk.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+    {
+      id: 2,
+      name: "PREMIUM T-BONE",
+      description: "700g cut for serious steak lovers.",
+      price: 49.95,
+      image: "/images/products/american-tomahawk.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+  ],
+  specialcuts: [
+    {
+      id: 1,
+      name: "TOMAHAWK STEAK",
+      description: "1kg bone-in ribeye, our most impressive cut.",
+      price: 69.95,
+      image: "/images/products/american-tomahawk.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+    {
+      id: 2,
+      name: "WAGYU RIBEYE",
+      description: "300g of premium marbled Wagyu beef.",
+      price: 89.95,
+      image: "/images/products/argentine-ribeye.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+  ],
+  roasts: [
+    {
+      id: 1,
+      name: "PRIME RIB ROAST",
+      description:
+        "A classic roast with exceptional marbling and flavor, perfect for special occasions.",
+      price: 29.95,
+      image: "/images/products/irish-striploin.jpg",
+      perfectFor: ["ROASTING", "SPECIAL OCCASIONS"],
+    },
+    {
+      id: 2,
+      name: "RUMP ROAST",
+      description:
+        "A lean and flavorful roast that's perfect for slow cooking and family dinners.",
+      price: 24.95,
+      image: "/images/products/argentine-ribeye.jpg",
+      perfectFor: ["SLOW COOKING", "ROASTING"],
+    },
+  ],
+  specialty: [
+    {
+      id: 1,
+      name: "TOMAHAWK STEAK",
+      description:
+        "An impressive cut with the entire rib bone left in, perfect for a show-stopping meal.",
+      price: 49.95,
+      image: "/images/products/american-tomahawk.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+    {
+      id: 2,
+      name: "WAGYU BEEF",
+      description:
+        "Premium Japanese-style beef known for its intense marbling and rich flavor.",
+      price: 89.95,
+      image: "/images/products/argentine-ribeye.jpg",
+      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+    },
+  ],
+  ground: [
+    {
+      id: 1,
+      name: "PREMIUM GROUND BEEF",
+      description:
+        "Freshly ground beef perfect for burgers, meatballs, and other classic dishes.",
+      price: 19.95,
+      image: "/images/products/product1.png",
+      perfectFor: ["BURGERS", "MEATBALLS"],
+    },
+    {
+      id: 2,
+      name: "STEAK MINCE",
+      description:
+        "Premium steak mince with the perfect fat content for juicy burgers.",
+      price: 22.95,
+      image: "/images/products/product2.png",
+      perfectFor: ["BURGERS", "MEATBALLS"],
+    },
+  ],
+};
 
-const ProductCard = () => {
+const ProductCard = ({ type = "steaks" }) => {
+  const products = allProducts[type] || allProducts.steaks;
   const [currentProduct, setCurrentProduct] = useState(0);
 
   const nextProduct = () => {
@@ -78,26 +224,13 @@ const ProductCard = () => {
 
         {/* Content */}
         <div className="relative z-10 h-full py-16 md:py-0 lg:pb-12">
-          <div className="max-w-[1400px] mx-auto  md:px-4 h-full">
-            {/* <div className="text-center py-8">
-              <h2 className="text-[#E85B4E]  text-xl md:text-2xl lg:text-4xl font-bold mb-5 md:mb-8 uppercase tracking-wide leading-normal">
-                Customer favorites
-              </h2>
-              <p className="text-[#f7f1e8]/90  text-base lg:text-lg  mb-8 md:mb-12 leading-tight sm:leading-relaxed tracking-wide w-11/12 sm:w-5/6 md:w-4/5 mx-auto">
-                We have a huge selection of the finest quality meats in store.
-                Below is a small selection of some of the firm favorites among
-                our customers.
-              </p>
-
-              Separator Line
-              <div className="w-44 h-[2px] bg-white mx-auto "></div>
-            </div>  */}
+          <div className="max-w-[1400px] mx-auto md:px-4 h-full">
             <div className="flex flex-col h-full">
               {/* Mobile Layout */}
               <div className="block md:hidden">
                 <div className="space-y-8">
                   {/* Title */}
-                  <h2 className="text-[#d94a4a] text-4xl sm:text-5xl text-center uppercase tracking-wide">
+                  <h2 className="text-[#F4C430] [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)] text-4xl sm:text-5xl text-center uppercase tracking-wide">
                     {products[currentProduct].name}
                   </h2>
 
@@ -109,10 +242,10 @@ const ProductCard = () => {
                   {/* Image */}
                   <div className="relative w-full aspect-[3/3] max-w-[350px] mx-auto my-8">
                     {/* Navigation Arrows - Mobile */}
-                    <div className="md:hidden absolute left-0 right-0 top-1/2 -translate-y-1/2 flex justify-between  sm:px-0 sm:-mx-6 z-20">
+                    <div className="md:hidden absolute left-0 right-0 top-1/2 -translate-y-1/2 flex justify-between sm:px-0 sm:-mx-6 z-20">
                       <button
                         onClick={prevProduct}
-                        className="w-12 h-12 rounded-full border-2 border-[#d94a4a] flex items-center justify-center group hover:bg-[#d94a4a] transition-colors"
+                        className="w-12 h-12 rounded-full border-2 border-[#F4C430] flex items-center justify-center group hover:bg-gradient-to-b from-[#F4C430] to-[#DAA520] transition-colors"
                         aria-label="Previous product"
                       >
                         <svg
@@ -124,7 +257,7 @@ const ProductCard = () => {
                         >
                           <path
                             d="M9 18L15 12L9 6"
-                            stroke="#d94a4a"
+                            stroke="#F4C430"
                             strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -134,7 +267,7 @@ const ProductCard = () => {
                       </button>
                       <button
                         onClick={nextProduct}
-                        className="w-12 h-12 rounded-full border-2 border-[#d94a4a] flex items-center justify-center group hover:bg-[#d94a4a] transition-colors"
+                        className="w-12 h-12 rounded-full border-2 border-[#F4C430] flex items-center justify-center group hover:bg-gradient-to-b from-[#F4C430] to-[#DAA520] transition-colors"
                         aria-label="Next product"
                       >
                         <svg
@@ -145,7 +278,7 @@ const ProductCard = () => {
                         >
                           <path
                             d="M9 18L15 12L9 6"
-                            stroke="#d94a4a"
+                            stroke="#F4C430"
                             strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -168,13 +301,13 @@ const ProductCard = () => {
                   <p className="text-white text-lg text-center tracking-wide mb-8">
                     FROM €{products[currentProduct].price} PER/KG
                   </p>
-                  <button className="w-full max-w-xs mx-auto block bg-[#d94a4a] text-white py-3 rounded-sm hover:bg-[#b33e3e] transition-colors uppercase tracking-wider text-sm font-medium">
+                  <button className="w-full max-w-xs mx-auto block bg-gradient-to-b from-[#F4C430] to-[#DAA520] hover:from-[#DAA520] hover:to-[#F4C430] text-white py-3 rounded-sm transition-all duration-300 uppercase tracking-wider text-sm font-medium shadow-[0_2px_4px_rgba(0,0,0,0.1)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)]">
                     ADD TO CART
                   </button>
 
                   {/* Perfect For */}
                   <div className="max-w-xs mx-auto">
-                    <p className="text-[#d94a4a] text-lg mb-6 uppercase tracking-wider font-bold text-center">
+                    <p className="text-[#F4C430] text-lg mb-6 uppercase tracking-wider font-bold text-center">
                       PERFECT FOR
                     </p>
                     <div className="flex justify-center gap-8">
@@ -202,10 +335,10 @@ const ProductCard = () => {
               </div>
 
               {/* Desktop Layout */}
-              <div className="hidden md:grid md:grid-cols-4   md:items-center">
+              <div className="hidden md:grid md:grid-cols-4 md:items-center">
                 {/* Left Column - Product Info */}
                 <div className="md:col-span-1">
-                  <h2 className="text-[#d94a4a] text-5xl mb-10 uppercase tracking-wide">
+                  <h2 className="text-[#F4C430] [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)] text-5xl mb-10 uppercase tracking-wide">
                     {products[currentProduct].name}
                   </h2>
                   <p className="text-white mb-16 font-light text-sm lg:text-base">
@@ -214,7 +347,7 @@ const ProductCard = () => {
                   <p className="text-white text-sm lg:text-lg tracking-wide mb-6">
                     FROM €{products[currentProduct].price} PER/KG
                   </p>
-                  <button className="w-full bg-[#d94a4a] text-white py-3 rounded-sm hover:bg-[#b33e3e] transition-colors uppercase tracking-wider text-sm font-medium">
+                  <button className="w-full bg-gradient-to-b from-[#F4C430] to-[#DAA520] hover:from-[#DAA520] hover:to-[#F4C430] text-white py-3 rounded-sm transition-all duration-300 uppercase tracking-wider text-sm font-medium shadow-[0_2px_4px_rgba(0,0,0,0.1)] hover:shadow-[0_4px_8px_rgba(0,0,0,0.2)]">
                     ADD TO CART
                   </button>
                 </div>
@@ -235,7 +368,7 @@ const ProductCard = () => {
                 {/* Right Column - Perfect For */}
                 <div className="md:col-span-1 lg:pl-16">
                   <div className="text-start">
-                    <p className="text-[#d94a4a] text-lg mb-8 uppercase tracking-wider font-bold">
+                    <p className="text-[#F4C430] text-lg mb-8 uppercase tracking-wider font-bold">
                       PERFECT FOR
                     </p>
                     <div className="space-y-6">
@@ -266,7 +399,7 @@ const ProductCard = () => {
               <div className="hidden md:flex absolute bottom-12 left-1/2 -translate-x-1/2 space-x-6">
                 <button
                   onClick={prevProduct}
-                  className="w-14 h-14 rounded-full border-2 border-[#d94a4a] flex items-center justify-center group hover:bg-[#d94a4a] transition-colors"
+                  className="w-14 h-14 rounded-full border-2 border-[#F4C430] flex items-center justify-center group hover:bg-gradient-to-b from-[#F4C430] to-[#DAA520] transition-colors"
                   aria-label="Previous product"
                 >
                   <svg
@@ -278,7 +411,7 @@ const ProductCard = () => {
                   >
                     <path
                       d="M9 18L15 12L9 6"
-                      stroke="#d94a4a"
+                      stroke="#F4C430"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -288,13 +421,13 @@ const ProductCard = () => {
                 </button>
                 <button
                   onClick={nextProduct}
-                  className="w-14 h-14 rounded-full border-2 border-[#d94a4a] flex items-center justify-center group hover:bg-[#d94a4a] transition-colors"
+                  className="w-14 h-14 rounded-full border-2 border-[#F4C430] flex items-center justify-center group hover:bg-gradient-to-b from-[#F4C430] to-[#DAA520] transition-colors"
                   aria-label="Next product"
                 >
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path
                       d="M9 18L15 12L9 6"
-                      stroke="#d94a4a"
+                      stroke="#F4C430"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"

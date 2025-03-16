@@ -32,7 +32,7 @@ const FAQ = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           {/* Heading */}
-          <h2 className="text-[#d94a4a] text-[2.5rem] lg:text-[4rem] mb-6 uppercase font-bold tracking-wide">
+          <h2 className="text-[#F4C430] text-[2.5rem] lg:text-[4rem] mb-6 uppercase font-bold tracking-wide">
             FAQ
           </h2>
 
@@ -45,7 +45,7 @@ const FAQ = () => {
           </p>
 
           {/* Divider */}
-          <div className="w-40 h-0.5 bg-[#d94a4a] mx-auto mb-16"></div>
+          <div className="w-40 h-0.5 bg-[#F4C430] mx-auto mb-16"></div>
 
           {/* FAQ Items */}
           <div className="space-y-8">
@@ -57,7 +57,7 @@ const FAQ = () => {
                       openQuestion === faq.question ? null : faq.question
                     )
                   }
-                  className="w-full bg-[#d94a4a] text-white p-6 rounded-sm flex justify-between items-center group transition-all duration-300"
+                  className="w-full bg-[#F4C430] text-white p-6 rounded-sm flex justify-between items-center group transition-all duration-300"
                 >
                   <span className="text-[1.1rem] sm:text-[1.375rem] lg:text-[1.5rem] font-bold tracking-wide">
                     {faq.question}

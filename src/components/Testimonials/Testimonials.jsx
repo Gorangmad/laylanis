@@ -67,7 +67,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="bg-[#d94a4a] py-20">
+    <section className="bg-[#DAA520] py-20">
       <div className="max-w-[1400px] mx-auto px-4">
         {/* Heading */}
         <h2 className="text-white text-4xl md:text-5xl text-center font-bold mb-6 uppercase tracking-wider">
@@ -142,7 +142,7 @@ const Testimonials = () => {
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                className="rotate-180"
+                className="rotate-180 group-hover:stroke-[#F4C430] transition-colors"
               >
                 <path
                   d="M9 18L15 12L9 6"
@@ -150,7 +150,6 @@ const Testimonials = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="group-hover:stroke-[#d94a4a] transition-colors"
                 />
               </svg>
             </button>
@@ -166,7 +165,7 @@ const Testimonials = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="group-hover:stroke-[#d94a4a] transition-colors"
+                  className="group-hover:stroke-[#F4C430] transition-colors"
                 />
               </svg>
             </button>

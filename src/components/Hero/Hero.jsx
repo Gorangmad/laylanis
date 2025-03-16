@@ -34,7 +34,7 @@ const Hero = () => {
 
         {/* Left Content */}
         <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0 mt-[35vw] md:mt-[45vh] lg:mt-0">
-          <p className="text-red-500 text-[3.2vw] lg:text-[1.5vw] mb-3 lg:mb-4 font-medium tracking-wide uppercase">
+          <p className="text-[#F4C430] text-[3.2vw] lg:text-[1.5vw] mb-3 lg:mb-4 font-medium tracking-wide uppercase">
             COSTA DEL SOL
           </p>
           <h1 className="text-[#f7f1e8] font-gin text-[7vw] lg:text-[4.5vw] font-bold mb-4 lg:mb-6 leading-tight uppercase">
@@ -46,8 +46,8 @@ const Hero = () => {
           </p>
           <Link
             href="/products"
-            className="inline-block bg-transparent text-red-500 border-2 border-red-500 
-              px-5 lg:px-8 py-2.5 lg:py-3 rounded-sm hover:bg-red-500 hover:text-[#f7f1e8] transition-all 
+            className="inline-block bg-transparent text-[#F4C430] border-2 border-[#F4C430] 
+              px-5 lg:px-8 py-2.5 lg:py-3 rounded-sm hover:bg-[#F4C430] hover:text-[#f7f1e8] transition-all 
               duration-300 uppercase tracking-wider text-[3vw] md:text-[1.8vw] lg:text-[1.2vw] font-medium"
           >
             <button>View Products</button>

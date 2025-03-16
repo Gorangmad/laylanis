@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <section className="w-full bg-[#d94a4a] min-h-screen grid place-items-center font-montserrat py-16 lg:py-24">
+    <section className="w-full bg-[#DAA520] min-h-screen grid place-items-center font-montserrat py-16 lg:py-24">
       <div className="max-w-7xl w-full mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-24">
           {/* Left Image */}
@@ -22,7 +22,7 @@ const About = () => {
 
           {/* Right Content */}
           <div className="text-center lg:text-left">
-            <h2 className="text-[#8B2921] tracking-[0.2em] text-2xl lg:text-3xl mb-6">
+            <h2 className="text-[#000000] tracking-[0.2em] text-2xl lg:text-3xl mb-6">
               HI THERE!
             </h2>
             <h3 className="text-[#f7f1e8] font-bold text-4xl lg:text-5xl mb-8">
@@ -38,8 +38,8 @@ const About = () => {
             </p>
             <Link
               href="/about-us"
-              className="inline-block bg-[#8B2921] text-[#f7f1e8] border-2 border-[#8B2921] 
-              px-8 py-3 rounded-sm hover:bg-transparent hover:text-[#8B2921] transition-all 
+              className="inline-block bg-[#000000] text-[#f7f1e8] border-2 border-[#DAA520] 
+              px-8 py-3 rounded-sm   hover:text-[#ffd466] transition-all 
               duration-300 uppercase tracking-wider text-sm font-medium"
             >
               <button>ABOUT US</button>

@@ -24,7 +24,7 @@ const FeaturesCard2 = () => {
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-16 lg:py-24 min-h-screen flex flex-col items-center justify-center">
         <div className="text-center max-w-6xl mx-auto">
-          <h2 className="text-[#E85B4E]  text-xl md:text-2xl lg:text-3xl font-bold mb-5 md:mb-8 uppercase tracking-wide leading-normal">
+          <h2 className="text-[#F4C430]  text-xl md:text-2xl lg:text-3xl font-bold mb-5 md:mb-8 uppercase tracking-wide leading-normal">
             WE ENSURE YOU RECEIVE THE FRESHEST MEAT POSSIBLE.
           </h2>
           <p className="text-[#f7f1e8]/90  text-base lg:text-lg  mb-8 md:mb-12 leading-tight sm:leading-relaxed tracking-wide w-11/12 sm:w-5/6 md:w-4/5 mx-auto">

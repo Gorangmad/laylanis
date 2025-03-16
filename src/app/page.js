@@ -8,7 +8,7 @@ import ProductCard from "@/components/ProductCard/ProductCard";
 import Testimonials from "@/components/Testimonials/Testimonials";
 export default function Home() {
   return (
-    <div className="bg-red-500">
+    <div className="bg-[#DAA520]">
       <Hero />
       <About />
       <FeaturesCard2 />

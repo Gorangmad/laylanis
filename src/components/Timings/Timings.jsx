@@ -21,7 +21,7 @@ const Timings = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           {/* Heading */}
-          <h2 className="text-[#d94a4a] text-[2rem] lg:text-[3rem] mb-16 uppercase font-bold tracking-wide">
+          <h2 className="text-[#F4C430] text-[2rem] lg:text-[3rem] mb-16 uppercase font-bold tracking-wide">
             OPENING TIMES
           </h2>
 

@@ -22,14 +22,15 @@ const Footer = () => {
         {/* Top Section with Logo */}
         <div className="w-full border-b border-neutral-700">
           <div className="max-w-7xl mx-auto px-4 lg:px-8 py-16">
-            <div className="flex justify-center">
+            <div className="flex flex-col justify-center items-center">
               <Image
-                src="/images/logo-2.png"
+                src="/logo.png"
                 alt="Logo"
-                width={150}
-                height={150}
-                className="mb-6"
+                width={100}
+                height={100}
+                className="mb-2 "
               />
+              <h1 className="text-[#F4C430] text-2xl mb-4 ">Laylani's</h1>
             </div>
           </div>
         </div>
@@ -139,7 +140,7 @@ const Footer = () => {
           <div className="flex justify-center space-x-4">
             <Link
               href="https://instagram.com"
-              className="bg-[#d94a4a] rounded-full p-3 hover:bg-[#b33e3e] transition-colors"
+              className="bg-[#F4C430] rounded-full p-3 hover:bg-[#DAA520] transition-colors"
             >
               <Image
                 src="/icons/instagram.svg"
@@ -150,7 +151,7 @@ const Footer = () => {
             </Link>
             <Link
               href="https://facebook.com"
-              className="bg-[#d94a4a] rounded-full p-3 hover:bg-[#b33e3e] transition-colors"
+              className="bg-[#F4C430] rounded-full p-3 hover:bg-[#DAA520] transition-colors"
             >
               <Image
                 src="/icons/facebook.svg"

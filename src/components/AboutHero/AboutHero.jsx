@@ -7,10 +7,10 @@ const AboutHero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
-          src="/images/about-bg.jpg"
+          src="/images/about-3.jpg"
           alt="Butcher shop background"
           fill
-          className="object-cover object-center w-full h-full brightness-[120%] contrast-110 saturate-100"
+          className="object-cover object-center w-full h-full brightness-[100%] contrast-110 saturate-100"
           sizes="100vw"
           priority
           quality={100}
@@ -22,10 +22,10 @@ const AboutHero = () => {
       <div className="relative z-10 w-full max-w-11/12 px-4 lg:px-8 mx-auto">
         {/* Left Content */}
         <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
-          <p className="text-red-500 text-lg md:text-xl uppercase tracking-widest mb-4">
+          <p className="text-[#F4C430] text-lg md:text-xl uppercase tracking-widest mb-4">
             WELCOME TO...
           </p>
-          <h1 className="text-[#f7f1e8] font-gin text-4xl md:text-5xl lg:text-6xl font-bold mb-6 uppercase tracking-wide leading-tight">
+          <h1 className="text-[#f7f1e8] font-gin text-4xl md:text-5xl lg:text-7xl font-bold mb-6 uppercase tracking-wide leading-tight">
             LIAM'S QUALITY <br /> MEATS.
           </h1>
           <p className="text-[#f7f1e8]/90 text-base md:text-lg leading-relaxed tracking-wide max-w-xl">
