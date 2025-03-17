@@ -133,71 +133,16 @@ const allProducts = {
       perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
     },
   ],
-  roasts: [
-    {
-      id: 1,
-      name: "PRIME RIB ROAST",
-      description:
-        "A classic roast with exceptional marbling and flavor, perfect for special occasions.",
-      price: 29.95,
-      image: "/images/products/irish-striploin.jpg",
-      perfectFor: ["ROASTING", "SPECIAL OCCASIONS"],
-    },
-    {
-      id: 2,
-      name: "RUMP ROAST",
-      description:
-        "A lean and flavorful roast that's perfect for slow cooking and family dinners.",
-      price: 24.95,
-      image: "/images/products/argentine-ribeye.jpg",
-      perfectFor: ["SLOW COOKING", "ROASTING"],
-    },
-  ],
-  specialty: [
-    {
-      id: 1,
-      name: "TOMAHAWK STEAK",
-      description:
-        "An impressive cut with the entire rib bone left in, perfect for a show-stopping meal.",
-      price: 49.95,
-      image: "/images/products/american-tomahawk.jpg",
-      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
-    },
-    {
-      id: 2,
-      name: "WAGYU BEEF",
-      description:
-        "Premium Japanese-style beef known for its intense marbling and rich flavor.",
-      price: 89.95,
-      image: "/images/products/argentine-ribeye.jpg",
-      perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
-    },
-  ],
-  ground: [
-    {
-      id: 1,
-      name: "PREMIUM GROUND BEEF",
-      description:
-        "Freshly ground beef perfect for burgers, meatballs, and other classic dishes.",
-      price: 19.95,
-      image: "/images/products/product1.png",
-      perfectFor: ["BURGERS", "MEATBALLS"],
-    },
-    {
-      id: 2,
-      name: "STEAK MINCE",
-      description:
-        "Premium steak mince with the perfect fat content for juicy burgers.",
-      price: 22.95,
-      image: "/images/products/product2.png",
-      perfectFor: ["BURGERS", "MEATBALLS"],
-    },
-  ],
 };
 
-const ProductCard = ({ type = "steaks" }) => {
-  const products = allProducts[type] || allProducts.steaks;
+const ProductCard = ({ type = "hueftsteak" }) => {
+  const products = allProducts[type] || allProducts.hueftsteak;
   const [currentProduct, setCurrentProduct] = useState(0);
+
+  // Ensure we have valid products
+  if (!products || products.length === 0) {
+    return null;
+  }
 
   const nextProduct = () => {
     setCurrentProduct((prev) => (prev + 1) % products.length);
