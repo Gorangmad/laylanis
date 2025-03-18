@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import ProductCard from "@/components/ProductCard/ProductCard";
+import ProductCard from "../ProductCard/ProductCard";
+import ProductsSection from "../ProductsSection/ProductsSection";
 
 const defaultCut = {
   id: "steaks",
@@ -12,36 +15,33 @@ const defaultCut = {
 
 const CutSection = ({ cut = defaultCut }) => {
   return (
-    <section
-      id={cut.id}
-      className="w-full py-24 lg:py-32 bg-[#1a1a1a] border-t border-[#333]"
-    >
-      <div className="max-w-[1400px] mx-auto px-4 lg:px-8">
-        {/* Header */}
-        <div className="flex flex-col lg:flex-row items-center gap-8 mb-16">
-          {/* Image */}
-          <div className="w-full lg:w-1/3 aspect-video relative rounded-sm overflow-hidden">
+    <section id={cut.id} className="  bg-[#1a1a1a]">
+      <div className="mx-auto">
+        {/* Cut Header */}
+        <div className="flex flex-col md:flex-row items-center gap-20 mb-16 w-5/6 mx-auto">
+          {/* Cut Image */}
+          <div className="relative w-[350px] h-[200px] flex-shrink-0 border-4 border-[#F4C430] rounded-sm overflow-hidden shadow-[0_0_20px_rgba(244,196,48,0.2)]">
             <Image
               src={cut.image}
-              alt={cut.name}
+              alt={`${cut.name} cut`}
               fill
               className="object-cover"
             />
           </div>
 
-          {/* Text Content */}
-          <div className="w-full lg:w-2/3 text-center lg:text-left">
-            <h2 className="text-[#F4C430] text-4xl lg:text-5xl font-bold mb-6 font-gin">
+          {/* Cut Info */}
+          <div className="flex-grow">
+            <h2 className="text-[#F4C430] text-4xl font-gin mb-4 [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)]">
               {cut.name}
             </h2>
-            <p className="text-[#f7f1e8] text-lg leading-relaxed max-w-2xl lg:max-w-none">
+            <p className="text-[#f7f1e8]/80 text-lg leading-relaxed max-w-3xl">
               {cut.description}
             </p>
           </div>
         </div>
 
-        {/* Products */}
-        <ProductCard type={cut.id} />
+        {/* Products Section */}
+        <ProductsSection type={cut.id} category="cuts" />
       </div>
     </section>
   );

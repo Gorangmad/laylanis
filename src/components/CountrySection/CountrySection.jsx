@@ -3,10 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import ProductCard from "../ProductCard/ProductCard";
+import ProductsSection from "../ProductsSection/ProductsSection";
 
 const CountrySection = ({ country, products }) => {
   return (
-    <section id={country.id} className="py-24 bg-[#1a1a1a]">
+    <section id={country.id} className="pt-24 bg-[#1a1a1a]">
       <div className="mx-auto">
         {/* Country Header */}
         <div className="flex flex-col md:flex-row items-center gap-20 mb-16 w-5/6 mx-auto">
@@ -37,7 +38,7 @@ const CountrySection = ({ country, products }) => {
             <ProductCard key={product.id} product={product} />
           ))}
         </div> */}
-        <ProductCard />
+        <ProductsSection type={country.id} category="countries" />
       </div>
     </section>
   );

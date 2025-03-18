@@ -158,6 +158,13 @@ const Header = () => {
             >
               HOME
             </Link>
+            <Link
+              href="/about-us"
+              className="block text-white hover:text-[#F4C430] transition-colors"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              ABOUT US
+            </Link>
             <div className="space-y-4">
               <span className="block text-white">PRODUCTS</span>
               <div className="grid grid-cols-2 gap-4 pl-4">
@@ -199,13 +206,7 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <Link
-              href="/about-us"
-              className="block text-white hover:text-[#F4C430] transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              ABOUT US
-            </Link>
+
             <Link
               href="/contact"
               className="block text-[#F4C430] border-2 border-[#F4C430] py-3 text-center rounded-sm hover:bg-[#F4C430] hover:text-white transition-all duration-300 uppercase tracking-wider text-sm font-medium"

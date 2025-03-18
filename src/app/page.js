@@ -4,7 +4,7 @@ import About from "@/components/About/About";
 import FeaturesCard2 from "@/components/FeaturesCard2/FeaturesCard2";
 import NewsletterCTA from "@/components/NewsletterCTA/NewsletterCTA";
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
-import ProductCard from "@/components/ProductCard/ProductCard";
+import ProductsSection from "@/components/ProductsSection/ProductsSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
       <About />
       <FeaturesCard2 />
       <NewsletterCTA />
-      <ProductCard />
+      <ProductsSection type="hueftsteak" category="cuts" />
       <Testimonials />
       <WhyChooseUs />
     </main>
