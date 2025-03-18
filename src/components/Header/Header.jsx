@@ -34,7 +34,7 @@ const Header = () => {
                 priority
               />
             </Link>
-            <h1 className="text-[#F4C430] text-2xl  ">Laylani's</h1>
+            <h1 className="text-[#F4C430] text-2xl  ">Laylani&apos;s</h1>
           </div>
 
           {/* Desktop Navigation */}

@@ -44,7 +44,7 @@ const Button = ({
   type = "button",
   ...props
 }) => {
-  // Base styles that won't override custom classes
+  // Base styles that won&apos;t override custom classes
   const baseStyles =
     "inline-flex items-center justify-center font-medium tracking-wider uppercase transition-all duration-300 rounded-sm";
 

@@ -45,8 +45,8 @@ export default function CutsPage() {
             FOR ALL OCCASIONS
           </h1>
           <p className="text-[#f7f1e8] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto">
-            Whatever the occasion, we've got you covered with a large selection
-            of Premium Quality Meats from around the world
+            Whatever the occasion, we&apos;ve got you covered with a large
+            selection of Premium Quality Meats from around the world
           </p>
         </div>
 

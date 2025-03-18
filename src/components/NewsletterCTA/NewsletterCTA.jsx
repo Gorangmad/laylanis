@@ -6,12 +6,12 @@ const NewsletterCTA = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-[#f7f1e8] text-4xl lg:text-5xl font-bold mb-6 uppercase tracking-wider">
-            LET'S STAY IN TOUCH
+            LET&apos;S STAY IN TOUCH
           </h2>
           <p className="text-[#f7f1e8] text-lg lg:text-xl mb-12 leading-relaxed max-w-3xl mx-auto">
             We would love to keep you updated of new arrivals and special
-            offers. Enter your email below to never miss out on what's hot at
-            Liam's Quality Meats!
+            offers. Enter your email below to never miss out on what&apos;s hot
+            at Liam&apos;s Quality Meats!
           </p>
 
           {/* Newsletter Form */}

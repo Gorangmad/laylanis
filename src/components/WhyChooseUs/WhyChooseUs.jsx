@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-[#F4C430] text-4xl lg:text-5xl mb-6 uppercase  ">
-            WE'VE GOT IT IN THE BAG
+            WE&apos;VE GOT IT IN THE BAG
           </h2>
           <p className="text-gray-700 text-lg lg:text-xl leading-relaxed tracking-tight">
             We have been serving up the same recipe for over 8 years on the
@@ -32,8 +32,8 @@ const WhyChooseUs = () => {
               QUALITY
             </h3>
             <p className="text-gray-700">
-              Liam's Quality Meats is just that, premium quality. When you shop
-              with us you can be assured that you are purchasing the best
+              Liam&apos;s Quality Meats is just that, premium quality. When you
+              shop with us you can be assured that you are purchasing the best
               quality meats your money can buy.
             </p>
           </div>

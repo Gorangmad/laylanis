@@ -26,13 +26,13 @@ const AboutHero = () => {
             WELCOME TO...
           </p>
           <h1 className="text-[#f7f1e8] font-gin text-4xl md:text-5xl lg:text-7xl font-bold mb-6 uppercase tracking-wide leading-tight">
-            LIAM'S QUALITY <br /> MEATS.
+            LIAM&apos;S QUALITY <br /> MEATS.
           </h1>
           <p className="text-[#f7f1e8]/90 text-base md:text-lg leading-relaxed tracking-wide max-w-xl">
-            We would like to wish you a warm welcome to our family Butcher's.
-            Liam's Quality Meats is your one stop shop for all your meat needs
-            on the Costa Del Sol. We look forward to welcoming you in store
-            soon.
+            We would like to wish you a warm welcome to our family
+            Butcher&apos;s. Liam&apos;s Quality Meats is your one stop shop for
+            all your meat needs on the Costa Del Sol. We look forward to
+            welcoming you in store soon.
           </p>
         </div>
       </div>

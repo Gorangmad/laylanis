@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 const testimonials = [
   {
     id: 1,
-    text: "The products from Liam's were amazing!! It was highly recommended by other family members and did not disappoint. Sausages were outstanding and bacon was too. I wouldn't hesitate to recommend this butchers.",
+    text: "The products from Liam&apos;s were amazing!! It was highly recommended by other family members and did not disappoint. Sausages were outstanding and bacon was too. I wouldn&apos;t hesitate to recommend this butchers.",
     author: "ANGELA",
   },
   {
@@ -21,7 +21,7 @@ const testimonials = [
   },
   {
     id: 3,
-    text: "We visit Liam's butcher every time we are on the coast, he is extremely friendly and helpful! His selection of meats is amazing and delicious. We have got our Christmas hampers from him the last two years and everyone loved it. Highly recommend.",
+    text: "We visit Liam&apos;s butcher every time we are on the coast, he is extremely friendly and helpful! His selection of meats is amazing and delicious. We have got our Christmas hampers from him the last two years and everyone loved it. Highly recommend.",
     author: "GINA",
   },
   {
@@ -31,12 +31,12 @@ const testimonials = [
   },
   {
     id: 5,
-    text: "I've been a regular customer for years and the quality has never disappointed. Their Christmas turkey was the star of our family dinner. The personalized service makes every visit special.",
+    text: "I&apos;ve been a regular customer for years and the quality has never disappointed. Their Christmas turkey was the star of our family dinner. The personalized service makes every visit special.",
     author: "SARAH",
   },
   {
     id: 6,
-    text: "Found this gem of a butcher shop last month and I'm so glad I did! The meat quality is exceptional and their prices are very reasonable. Their marinated chicken is absolutely delicious.",
+    text: "Found this gem of a butcher shop last month and I&apos;m so glad I did! The meat quality is exceptional and their prices are very reasonable. Their marinated chicken is absolutely delicious.",
     author: "JAMES",
   },
   {
@@ -76,9 +76,9 @@ const Testimonials = () => {
 
         {/* Description */}
         <p className="text-white/90 text-center text-base lg:text-lg  mb-8 md:mb-12 leading-tight sm:leading-relaxed tracking-wide w-11/12 sm:w-5/6 md:w-4/5 mx-auto">
-          We love getting feedback from our customer's and are constantly trying
-          to improve their experience with us. Gladly our testimonials are
-          always very complimentary which makes us extremely happy.
+          We love getting feedback from our customer&apos;s and are constantly
+          trying to improve their experience with us. Gladly our testimonials
+          are always very complimentary which makes us extremely happy.
         </p>
 
         {/* Testimonial Slider */}
