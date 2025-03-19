@@ -112,7 +112,7 @@ const Header = () => {
               </div>
             </div>
             <Link
-              href="/contact"
+              href="/contact-us"
               className="bg-transparent text-[#F4C430] border-2 border-[#F4C430] px-8 py-3 rounded-sm 
               hover:bg-[#F4C430] hover:text-[#f7f1e8] transition-all duration-300 uppercase tracking-wider text-[16px] font-medium"
             >
@@ -208,7 +208,7 @@ const Header = () => {
             </div>
 
             <Link
-              href="/contact"
+              href="/contact-us-us"
               className="block text-[#F4C430] border-2 border-[#F4C430] py-3 text-center rounded-sm hover:bg-[#F4C430] hover:text-white transition-all duration-300 uppercase tracking-wider text-sm font-medium"
               onClick={() => setIsMenuOpen(false)}
             >

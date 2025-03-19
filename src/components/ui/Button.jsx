@@ -14,7 +14,7 @@ const variants = {
 
   // Secondary button (gold background with black border)
   secondary:
-    "bg-[#DAA520] text-[#000000] border-2 border-[#000000] hover:text-white",
+    "bg-[#F4C430] text-[#000000] border-2 border-[#000000] hover:text-white",
 
   // Circular navigation button (used in Product Card)
   circular:
@@ -46,7 +46,7 @@ const Button = ({
 }) => {
   // Base styles that won&apos;t override custom classes
   const baseStyles =
-    "inline-flex items-center justify-center font-medium tracking-wider uppercase transition-all duration-300 rounded-sm";
+    "inline-flex cursor-pointer items-center justify-center font-medium tracking-wider uppercase transition-all duration-300 rounded-sm";
 
   const variantStyle = variants[variant] || variants.primary;
   const sizeStyle = variant === "circular" ? "" : sizes[size] || sizes.md;
