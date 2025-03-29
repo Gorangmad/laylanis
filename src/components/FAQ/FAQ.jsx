@@ -38,10 +38,10 @@ const FAQ = () => {
 
           {/* Description */}
           <p className="text-gray-700 text-[0.875rem] lg:text-[1.1rem] leading-[1.8] tracking-wide max-w-4xl mx-auto mb-6">
-            At Liam&apos;s Quality meats we are always on hand to answer any of
-            your questions. Just give us a call or text on Whatsapp and we will
-            be happy to assist you. Below are some frequently asked questions by
-            our customers.
+            At Laylani&apos;s Quality meats we are always on hand to answer any
+            of your questions. Just give us a call or text on Whatsapp and we
+            will be happy to assist you. Below are some frequently asked
+            questions by our customers.
           </p>
 
           {/* Divider */}

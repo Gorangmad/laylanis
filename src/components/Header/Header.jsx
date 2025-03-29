@@ -27,7 +27,7 @@ const Header = () => {
             <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
-                alt="Liam's Quality Meats Logo"
+                alt="Laylani's Quality Meats Logo"
                 width={80}
                 height={80}
                 className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] object-contain"

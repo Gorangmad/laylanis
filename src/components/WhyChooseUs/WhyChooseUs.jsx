@@ -32,9 +32,9 @@ const WhyChooseUs = () => {
               QUALITY
             </h3>
             <p className="text-gray-700">
-              Liam&apos;s Quality Meats is just that, premium quality. When you
-              shop with us you can be assured that you are purchasing the best
-              quality meats your money can buy.
+              Laylani&apos;s Quality Meats is just that, premium quality. When
+              you shop with us you can be assured that you are purchasing the
+              best quality meats your money can buy.
             </p>
           </div>
 

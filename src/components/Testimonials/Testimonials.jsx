@@ -11,17 +11,17 @@ import "swiper/css/navigation";
 const testimonials = [
   {
     id: 1,
-    text: "The products from Liam&apos;s were amazing!! It was highly recommended by other family members and did not disappoint. Sausages were outstanding and bacon was too. I wouldn&apos;t hesitate to recommend this butchers.",
+    text: "The products from Laylani&apos;s were amazing!! It was highly recommended by other family members and did not disappoint. Sausages were outstanding and bacon was too. I wouldn&apos;t hesitate to recommend this butchers.",
     author: "ANGELA",
   },
   {
     id: 2,
-    text: "So, we visit Liam regularly and each and every time it is a pleasure. Liam and Lynda provide a complete service with outstanding meat, a great flexible and happy service and the very best favorites of sausage rolls through to pasties and everything else in between.",
+    text: "So, we visit Laylani'sregularly and each and every time it is a pleasure. Laylani's provide a complete service with outstanding meat, a great flexible and happy service and the very best favorites of sausage rolls through to pasties and everything else in between.",
     author: "CLARE",
   },
   {
     id: 3,
-    text: "We visit Liam&apos;s butcher every time we are on the coast, he is extremely friendly and helpful! His selection of meats is amazing and delicious. We have got our Christmas hampers from him the last two years and everyone loved it. Highly recommend.",
+    text: "We visit Laylani&apos;s butcher every time we are on the coast, he is extremely friendly and helpful! His selection of meats is amazing and delicious. We have got our Christmas hampers from him the last two years and everyone loved it. Highly recommend.",
     author: "GINA",
   },
   {

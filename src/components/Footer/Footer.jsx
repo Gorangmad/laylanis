@@ -104,7 +104,7 @@ const Footer = () => {
             <div>
               <h3 className="text-white text-xl uppercase mb-6">ADDRESS</h3>
               <p className="text-neutral-400">
-                Liam&apos;s Quality Meats,
+                Laylani&apos;s Quality Meats,
                 <br />
                 Calle de Sabinillas, 4,
                 <br />
@@ -167,7 +167,7 @@ const Footer = () => {
         <div className="border-t border-neutral-700">
           <div className="max-w-7xl mx-auto px-4 lg:px-8 py-6">
             <div className="text-center text-neutral-400 text-sm">
-              <p>2021 All Rights Reserved Liam&apos;s Quality Meats</p>
+              <p>2021 All Rights Reserved Laylani&apos;s Quality Meats</p>
               <p className="mt-1">Website created by A. Reddan</p>
             </div>
           </div>

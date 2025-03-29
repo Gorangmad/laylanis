@@ -11,7 +11,7 @@ const NewsletterCTA = () => {
           <p className="text-[#f7f1e8] text-lg lg:text-xl mb-12 leading-relaxed max-w-3xl mx-auto">
             We would love to keep you updated of new arrivals and special
             offers. Enter your email below to never miss out on what&apos;s hot
-            at Liam&apos;s Quality Meats!
+            at Laylani&apos;s Quality Meats!
           </p>
 
           {/* Newsletter Form */}
