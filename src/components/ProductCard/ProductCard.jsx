@@ -1,9 +1,14 @@
 "use client";
-import React from "react";
-import Image from "next/image";
+import React, { useEffect } from "react";
 
 const ProductCard = ({ product }) => {
   if (!product) return null;
+
+  // ✅ Preload images when the component mounts (reduces delay)
+  useEffect(() => {
+    const img = new Image();
+    img.src = product.image;
+  }, [product.image]);
 
   return (
     <div className="flex flex-col h-full">
@@ -26,6 +31,7 @@ const ProductCard = ({ product }) => {
               src={product.image}
               alt={product.name}
               className="object-contain w-full h-full"
+              loading="lazy" // ✅ Lazy load for better performance
             />
           </div>
 
@@ -46,11 +52,12 @@ const ProductCard = ({ product }) => {
                   className="flex flex-col items-center space-y-2"
                 >
                   <div className="w-12 h-12">
-                    <Image
+                    <img
                       src={`/icons/${item.toLowerCase()}.svg`}
                       alt={item}
                       width={48}
                       height={48}
+                      loading="lazy" // ✅ Lazy load icons
                     />
                   </div>
                   <span className="text-white text-sm uppercase">{item}</span>
@@ -79,12 +86,11 @@ const ProductCard = ({ product }) => {
         {/* Center Column - Product Image */}
         <div className="md:col-span-2 flex justify-center items-center">
           <div className="relative w-[520px] h-[700px]">
-            <Image
+            <img
               src={product.image}
               alt={product.name}
-              fill
-              className="object-contain"
-              priority
+              className="object-contain w-full h-full"
+              loading="eager" // ✅ Preload for instant display
             />
           </div>
         </div>
@@ -103,11 +109,12 @@ const ProductCard = ({ product }) => {
                 >
                   <span className="text-white text-xl uppercase">{item}</span>
                   <div className="w-12 h-12">
-                    <Image
+                    <img
                       src={`/icons/${item.toLowerCase()}.svg`}
                       alt={item}
                       width={48}
                       height={48}
+                      loading="lazy" // ✅ Lazy load icons
                     />
                   </div>
                 </div>

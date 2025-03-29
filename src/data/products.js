@@ -103,7 +103,7 @@ export const allProducts = {
             "The finest cut of beef, known for its supreme tenderness and rich taste.",
           price: 59.95,
           image: "/images/products/countries/argentina/product-6.webp",
-          perfectFor: ["GRILLING", "GOURMET COOKING"],
+          perfectFor: ["GRILLING", "GOURMET-COOKING"],
         },
         {
           id: 7,
@@ -145,7 +145,7 @@ export const allProducts = {
             "Impressive dry-aged tomahawk steak from Ireland, known for its intense flavor.",
           price: 89.95,
           image: "/images/products/countries/ireland/product-1.webp",
-          perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+          perfectFor: ["GRILLING", "SPECIAL-OCCASIONS"],
         },
         {
           id: 2,
@@ -190,7 +190,7 @@ export const allProducts = {
             "Traditional Uruguayan roast beef, perfect for slow roasting.",
           price: 45.95,
           image: "/images/products/countries/uruguay/product-1.webp",
-          perfectFor: ["ROASTING", "SLOW COOKING"],
+          perfectFor: ["ROASTING", "SLOW-COOKING"],
         },
         {
           id: 2,
@@ -216,7 +216,7 @@ export const allProducts = {
             "Extremely tender and lean filet cut, perfect for a gourmet experience.",
           price: 54.95,
           image: "/images/products/countries/uruguay/product-4.webp",
-          perfectFor: ["GRILLING", "GOURMET COOKING"],
+          perfectFor: ["GRILLING", "GOURMET-COOKING"],
         },
         {
           id: 5,
@@ -243,7 +243,7 @@ export const allProducts = {
             "Premium Angus beef cut, offering a balance of tenderness and flavor.",
           price: 41.95,
           image: "/images/products/countries/uruguay/product-7.webp",
-          perfectFor: ["GRILLING", "STEAK LOVERS"],
+          perfectFor: ["GRILLING", "STEAK-LOVERS"],
         },
         {
           id: 8,
@@ -270,7 +270,7 @@ export const allProducts = {
             "Tender and juicy steak cut from the sirloin, great for grilling.",
           price: 36.95,
           image: "/images/products/countries/uruguay/product-10.webp",
-          perfectFor: ["GRILLING", "STEAK LOVERS"],
+          perfectFor: ["GRILLING", "STEAK-LOVERS"],
         },
         {
           id: 11,
@@ -296,7 +296,7 @@ export const allProducts = {
           description: "Premium cut from Uruguay, known for its tenderness.",
           price: 49.95,
           image: "/images/products/countries/uruguay/product-13.webp",
-          perfectFor: ["GRILLING", "SPECIAL OCCASIONS"],
+          perfectFor: ["GRILLING", "SPECIAL-OCCASIONS"],
         },
         {
           id: 14,
@@ -305,7 +305,7 @@ export const allProducts = {
             "The finest Angus filet cut, delivering unparalleled tenderness.",
           price: 57.95,
           image: "/images/products/countries/uruguay/product-14.webp",
-          perfectFor: ["GRILLING", "GOURMET COOKING"],
+          perfectFor: ["GRILLING", "GOURMET-COOKING"],
         },
         {
           id: 15,
@@ -314,7 +314,7 @@ export const allProducts = {
             "Top-quality Angus roast beef, offering a rich and juicy taste.",
           price: 50.95,
           image: "/images/products/countries/uruguay/product-15.webp",
-          perfectFor: ["ROASTING", "SPECIAL MEALS"],
+          perfectFor: ["ROASTING", "SPECIAL-MEALS"],
         },
       ],
     },
@@ -451,10 +451,10 @@ export const allProducts = {
         id: 2,
         name: "TOMAHAWKSTEAK IRLAND",
         description:
-          "Impressive Tomahawk steak from Ireland, perfect for special occasions.",
+          "Impressive Tomahawk steak from Ireland, perfect for special-occasions.",
         price: 89.95,
         image: "/images/products/cuts/rib-eye-steak/product-2.webp",
-        perfectFor: ["BBQ", "SPECIAL OCCASIONS"],
+        perfectFor: ["BBQ", "SPECIAL-OCCASIONS"],
       },
       {
         id: 3,
@@ -518,7 +518,7 @@ export const allProducts = {
           "Premium Uruguayan filet, known for its tenderness and exquisite taste.",
         price: 52.95,
         image: "/images/products/cuts/rinder-filet/product-1.webp",
-        perfectFor: ["STEAKHOUSE", "GOURMET COOKING"],
+        perfectFor: ["STEAKHOUSE", "GOURMET-COOKING"],
       },
       {
         id: 2,
@@ -527,7 +527,7 @@ export const allProducts = {
           "Argentinian Filetsteak, a top-quality choice for fine dining.",
         price: 54.95,
         image: "/images/products/cuts/rinder-filet/product-2.webp",
-        perfectFor: ["STEAKHOUSE", "GOURMET COOKING"],
+        perfectFor: ["STEAKHOUSE", "GOURMET-COOKING"],
       },
       {
         id: 3,
@@ -545,7 +545,7 @@ export const allProducts = {
           "Argentinian filet, prized for its incredible texture and juicy bite.",
         price: 51.95,
         image: "/images/products/cuts/rinder-filet/product-4.webp",
-        perfectFor: ["STEAKHOUSE", "GOURMET COOKING"],
+        perfectFor: ["STEAKHOUSE", "GOURMET-COOKING"],
       },
       {
         id: 5,
@@ -554,16 +554,16 @@ export const allProducts = {
           "Premium Angus filetsteak from Argentina, delivering world-class quality.",
         price: 58.95,
         image: "/images/products/cuts/rinder-filet/product-5.webp",
-        perfectFor: ["STEAKHOUSE", "GOURMET COOKING"],
+        perfectFor: ["STEAKHOUSE", "GOURMET-COOKING"],
       },
       {
         id: 6,
         name: "CHATEAU-STÜCK URUGUAY",
         description:
-          "Exquisite Chateau-Stück from Uruguay, perfect for special occasions.",
+          "Exquisite Chateau-Stück from Uruguay, perfect for special-occasions.",
         price: 59.95,
         image: "/images/products/cuts/rinder-filet/product-6.webp",
-        perfectFor: ["GOURMET COOKING", "SPECIAL OCCASIONS"],
+        perfectFor: ["GOURMET-COOKING", "SPECIAL-OCCASIONS"],
       },
       {
         id: 7,
@@ -572,7 +572,7 @@ export const allProducts = {
           "Classic filet steak, offering a melt-in-your-mouth experience.",
         price: 49.95,
         image: "/images/products/cuts/rinder-filet/product-7.webp",
-        perfectFor: ["STEAKHOUSE", "GOURMET COOKING"],
+        perfectFor: ["STEAKHOUSE", "GOURMET-COOKING"],
       },
       {
         id: 8,
@@ -581,7 +581,7 @@ export const allProducts = {
           "Premium filet tips, great for sautéing or making filet dishes.",
         price: 44.95,
         image: "/images/products/cuts/rinder-filet/product-8.webp",
-        perfectFor: ["GOURMET COOKING", "STEAKHOUSE"],
+        perfectFor: ["GOURMET-COOKING", "STEAKHOUSE"],
       },
     ],
     roastbeef: [
@@ -592,7 +592,7 @@ export const allProducts = {
           "High-quality Roastbeef from the USA, known for its rich marbling and deep flavor.",
         price: 47.95,
         image: "/images/products/cuts/roastbeef/product-1.webp",
-        perfectFor: ["STEAKHOUSE", "GOURMET COOKING"],
+        perfectFor: ["STEAKHOUSE", "GOURMET-COOKING"],
       },
       {
         id: 2,
@@ -607,10 +607,10 @@ export const allProducts = {
         id: 3,
         name: "ROASTBEEF-BRATEN URUGUAY",
         description:
-          "Classic Uruguayan Roastbeef-Braten, perfect for roasting and slow cooking.",
+          "Classic Uruguayan Roastbeef-Braten, perfect for roasting and slow-cooking.",
         price: 42.95,
         image: "/images/products/cuts/roastbeef/product-3.webp",
-        perfectFor: ["SLOW COOKING", "SPECIAL OCCASIONS"],
+        perfectFor: ["SLOW-COOKING", "SPECIAL-OCCASIONS"],
       },
       {
         id: 4,
@@ -619,7 +619,7 @@ export const allProducts = {
           "Argentinian Roastbeef, well-marbled and highly regarded for its tenderness.",
         price: 49.95,
         image: "/images/products/cuts/roastbeef/product-4.webp",
-        perfectFor: ["STEAKHOUSE", "GOURMET COOKING"],
+        perfectFor: ["STEAKHOUSE", "GOURMET-COOKING"],
       },
       {
         id: 5,
@@ -637,7 +637,7 @@ export const allProducts = {
           "Premium Angus Roastbeef from Uruguay, offering exceptional taste and texture.",
         price: 52.95,
         image: "/images/products/cuts/roastbeef/product-6.webp",
-        perfectFor: ["STEAKHOUSE", "GOURMET COOKING"],
+        perfectFor: ["STEAKHOUSE", "GOURMET-COOKING"],
       },
     ],
     rumpsteak: [
@@ -648,7 +648,7 @@ export const allProducts = {
           "Juicy and flavorful Argentinian Roastbeef, ideal for grilling or roasting.",
         price: 48.95,
         image: "/images/products/cuts/rumpsteak/product-1.webp",
-        perfectFor: ["STEAKHOUSE", "SPECIAL OCCASIONS"],
+        perfectFor: ["STEAKHOUSE", "SPECIAL-OCCASIONS"],
       },
       {
         id: 2,
@@ -657,7 +657,7 @@ export const allProducts = {
           "Premium Uruguayan Roastbeef, known for its tenderness and deep flavor.",
         price: 46.95,
         image: "/images/products/cuts/rumpsteak/product-2.webp",
-        perfectFor: ["BBQ", "GOURMET COOKING"],
+        perfectFor: ["BBQ", "GOURMET-COOKING"],
       },
       {
         id: 3,
@@ -675,7 +675,7 @@ export const allProducts = {
           "Tender and juicy Roastbeef-Steak from Uruguay, great for steak lovers.",
         price: 45.95,
         image: "/images/products/cuts/rumpsteak/product-4.webp",
-        perfectFor: ["BBQ", "GOURMET COOKING"],
+        perfectFor: ["BBQ", "GOURMET-COOKING"],
       },
       {
         id: 5,
@@ -693,7 +693,7 @@ export const allProducts = {
           "High-quality Uckermärker Rumpsteak, known for its tenderness and fine marbling.",
         price: 41.95,
         image: "/images/products/cuts/rumpsteak/product-6.webp",
-        perfectFor: ["GRILLING", "GOURMET COOKING"],
+        perfectFor: ["GRILLING", "GOURMET-COOKING"],
       },
       {
         id: 7,
@@ -731,7 +731,7 @@ export const allProducts = {
           "High-quality dry-aged T-Bone steak from the USA, known for its intense flavor and tenderness.",
         price: 69.95,
         image: "/images/products/cuts/tbone/product-2.webp",
-        perfectFor: ["GOURMET COOKING", "SPECIAL OCCASIONS"],
+        perfectFor: ["GOURMET-COOKING", "SPECIAL-OCCASIONS"],
       },
       {
         id: 3,
