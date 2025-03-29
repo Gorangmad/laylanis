@@ -22,12 +22,10 @@ const ProductCard = ({ product }) => {
 
           {/* Image */}
           <div className="relative w-full aspect-[3/3] max-w-[350px] mx-auto my-8">
-            <Image
+            <img
               src={product.image}
               alt={product.name}
-              fill
-              className="object-contain"
-              priority
+              className="object-contain w-full h-full"
             />
           </div>
 
