@@ -4,6 +4,7 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import Timings from "@/components/Timings/Timings";
 import FAQ from "@/components/FAQ/FAQ";
 import Hero from "@/components/ui/Hero";
+import InfinitySlider from "@/components/InfinitySlider/InfinitySlider";
 export const metadata = {
   title: "About Us | Liam's Quality Meats",
   description:
@@ -24,6 +25,7 @@ export default function AboutUs() {
         className={"lg:pb-40 pt-0"}
       />
       <Testimonials />
+      <InfinitySlider />
       <Timings />
       <FAQ />
       <NewsletterCTA />

@@ -64,7 +64,8 @@ const Hero = ({
               src="/lotties/contact.lottie"
               autoplay
               loop
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "100%", height: "100%" }.kl
+            lk]]l]op}
             />
           </div>
         )} */}

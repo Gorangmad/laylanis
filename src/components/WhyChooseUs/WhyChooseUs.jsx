@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
-    <section className="w-full bg-[#FFF5EE] py-24 lg:py-32">
+    <section className="w-full bg-[#FFF5EE] pt-10 pb-24 lg:pb-32 lg:pt-12">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-[#F4C430] text-4xl lg:text-5xl mb-6 uppercase  ">

@@ -10,7 +10,7 @@ export default function CutsPage() {
   const cuts = Object.entries(allProducts.cuts).map(([id, products]) => ({
     id,
     name: id.toUpperCase(),
-    image: "/images/products/product1.png",
+    image: `${products[0].image}`,
     description: `Discover our premium selection of ${id} cuts. Each piece is carefully selected and prepared to ensure the highest quality and perfect marbling.`,
     products,
   }));

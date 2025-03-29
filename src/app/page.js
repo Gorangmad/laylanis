@@ -6,6 +6,7 @@ import NewsletterCTA from "@/components/NewsletterCTA/NewsletterCTA";
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import ProductsSection from "@/components/ProductsSection/ProductsSection";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import InfinitySlider from "@/components/InfinitySlider/InfinitySlider";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <NewsletterCTA />
       <ProductsSection type="hueftsteak" category="cuts" />
       <Testimonials />
+      <InfinitySlider />
       <WhyChooseUs />
     </main>
   );
