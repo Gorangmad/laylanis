@@ -4,11 +4,11 @@ import Image from "next/image";
 const AboutHero = () => {
   return (
     <section className="relative flex overflow-hidden w-full min-h-screen py-20 lg:py-40 justify-center items-center font-montserrat text-[#f7f1e8]">
-      {/* Background Image with Overlay */}
+      {/* Hintergrundbild mit Overlay */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src="/images/about-3.jpg"
-          alt="Butcher shop background"
+          alt="Hintergrund Fleischgroßhandel"
           fill
           className="object-cover object-center w-full h-full brightness-[100%] contrast-110 saturate-100"
           sizes="100vw"
@@ -18,26 +18,26 @@ const AboutHero = () => {
         <div className="absolute inset-0 bg-black/60" />
       </div>
 
-      {/* Content Container */}
+      {/* Inhalt */}
       <div className="relative z-10 w-full max-w-11/12 px-4 lg:px-8 mx-auto">
-        {/* Left Content */}
         <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0">
           <p className="text-[#F4C430] text-lg md:text-xl uppercase tracking-widest mb-4">
-            WELCOME TO...
+            WILLKOMMEN BEI...
           </p>
           <h1 className="text-[#f7f1e8] font-gin text-4xl md:text-5xl lg:text-7xl font-bold mb-6 uppercase tracking-wide leading-tight">
-            Laylani&apos;S QUALITY <br /> MEATS.
+            Laylani&apos;s <br /> Premium Fleischgroßhandel
           </h1>
           <p className="text-[#f7f1e8]/90 text-base md:text-lg leading-relaxed tracking-wide max-w-xl">
-            We would like to wish you a warm welcome to our family
-            Butcher&apos;s. Laylani&apos;s Quality Meats is your one stop shop
-            for all your meat needs on the Costa Del Sol. We look forward to
-            welcoming you in store soon.
+            Willkommen bei Laylani’s – Ihrem Spezialisten für hochwertiges
+            Fleisch aus aller Welt. Als Großhändler beliefern wir Restaurants,
+            Hotels und Fachbetriebe mit Premium-Cuts, ausgewählten
+            Fleischsorten wie Wagyu und vielem mehr. Qualität, auf die man sich
+            verlassen kann.
           </p>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll-Indikator */}
       <div className="hidden lg:block absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <div className="w-8 h-8 border-2 border-[#f7f1e8] rounded-full flex items-center justify-center animate-bounce">
           <svg

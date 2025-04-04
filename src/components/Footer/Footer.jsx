@@ -28,9 +28,9 @@ const Footer = () => {
                 alt="Logo"
                 width={100}
                 height={100}
-                className="mb-2 "
+                className="mb-2"
               />
-              <h1 className="text-[#F4C430] text-2xl mb-4 ">Laylani&apos;s</h1>
+              <h1 className="text-[#F4C430] text-2xl mb-4">Laylani&apos;s</h1>
             </div>
           </div>
         </div>
@@ -104,13 +104,11 @@ const Footer = () => {
             <div>
               <h3 className="text-white text-xl uppercase mb-6">ADDRESS</h3>
               <p className="text-neutral-400">
-                Laylani&apos;s Quality Meats,
+                Laylani&apos;s Quality Meats
                 <br />
-                Calle de Sabinillas, 4,
+                Carl-Benz-Str. 16
                 <br />
-                29688 El Paraiso,
-                <br />
-                Malaga.
+                60314 Frankfurt am Main
               </p>
             </div>
 
@@ -128,9 +126,7 @@ const Footer = () => {
               <h3 className="text-white text-xl uppercase mb-6">
                 OPENING TIMES
               </h3>
-              <p className="text-neutral-400">
-                Tues - Sat&nbsp;&nbsp;&nbsp;10:00 - 16:00
-              </p>
+              <p className="text-neutral-400">Montag - Sat&nbsp;&nbsp;&nbsp;04:00 - 15:00</p>
             </div>
           </div>
         </div>
@@ -168,7 +164,7 @@ const Footer = () => {
           <div className="max-w-7xl mx-auto px-4 lg:px-8 py-6">
             <div className="text-center text-neutral-400 text-sm">
               <p>2021 All Rights Reserved Laylani&apos;s Quality Meats</p>
-              <p className="mt-1">Website created by A. Reddan</p>
+              <p className="mt-1"></p>
             </div>
           </div>
         </div>

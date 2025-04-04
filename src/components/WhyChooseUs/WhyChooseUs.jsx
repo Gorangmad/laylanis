@@ -6,40 +6,41 @@ const WhyChooseUs = () => {
     <section className="w-full bg-[#FFF5EE] pt-10 pb-24 lg:pb-32 lg:pt-12">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-[#F4C430] text-4xl lg:text-5xl mb-6 uppercase  ">
-            WE&apos;VE GOT IT IN THE BAG
+          <h2 className="text-[#F4C430] text-4xl lg:text-5xl mb-6 uppercase">
+            WARUM LAYLANI&apos;S?
           </h2>
           <p className="text-gray-700 text-lg lg:text-xl leading-relaxed tracking-tight">
-            We have been serving up the same recipe for over 8 years on the
-            Costa Del Sol. Our customers have come to love us for our Quality,
-            our Service, and most importantly, their Satisfaction.
+            Seit über 8 Jahren beliefern wir Kunden auf höchstem Niveau. Unsere
+            Partner und Kunden schätzen uns für unsere Qualität, unsere
+            Zuverlässigkeit und unseren erstklassigen Service.
           </p>
           <div className="w-32 h-0.5 bg-[#F4C430] mx-auto mt-6"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-          {/* Quality Card */}
-          <div className="bg-[#FFF5EE] p-8 md:p-4 lg:p-8 rounded-lg shadow-[0_4px_20px_rgba(244,196,48,0.15)] hover:shadow-[0_8px_30px_rgba(244,196,48,0.2)] transition-shadow duration-300 text-center text-base  md:text-sm 2xl:text-base 2xl:w-96">
+          {/* Qualität */}
+          <div className="bg-[#FFF5EE] p-8 md:p-4 lg:p-8 rounded-lg shadow-[0_4px_20px_rgba(244,196,48,0.15)] hover:shadow-[0_8px_30px_rgba(244,196,48,0.2)] transition-shadow duration-300 text-center text-base md:text-sm 2xl:text-base 2xl:w-96">
             <div className="w-16 h-16 mx-auto mb-6">
               <Image
                 src="/icons/quality-badge.svg"
-                alt="Quality Badge"
+                alt="Qualitätssiegel"
                 width={64}
                 height={64}
               />
             </div>
             <h3 className="text-[#F4C430] text-2xl lg:text-3xl mb-4 uppercase font-bold">
-              QUALITY
+              QUALITÄT
             </h3>
             <p className="text-gray-700">
-              Laylani&apos;s Quality Meats is just that, premium quality. When
-              you shop with us you can be assured that you are purchasing the
-              best quality meats your money can buy.
+              Laylani&apos;s steht für kompromisslose Spitzenqualität. Unser
+              Fleisch stammt aus den besten Quellen weltweit – geprüft,
+              rückverfolgbar und mit höchstem Anspruch an Frische und
+              Geschmack.
             </p>
           </div>
 
-          {/* Service Card */}
-          <div className="bg-[#FFF5EE] p-8 md:p-4 lg:p-8 rounded-lg shadow-[0_4px_20px_rgba(244,196,48,0.15)] hover:shadow-[0_8px_30px_rgba(244,196,48,0.2)] transition-shadow duration-300 text-center text-base  md:text-sm 2xl:text-base 2xl:w-96">
+          {/* Service */}
+          <div className="bg-[#FFF5EE] p-8 md:p-4 lg:p-8 rounded-lg shadow-[0_4px_20px_rgba(244,196,48,0.15)] hover:shadow-[0_8px_30px_rgba(244,196,48,0.2)] transition-shadow duration-300 text-center text-base md:text-sm 2xl:text-base 2xl:w-96">
             <div className="w-16 h-16 mx-auto mb-6">
               <Image
                 src="/icons/service.svg"
@@ -52,29 +53,29 @@ const WhyChooseUs = () => {
               SERVICE
             </h3>
             <p className="text-gray-700">
-              We pride ourselves on providing friendly and personal service. We
-              love our customers and want their shopping experience to be as
-              pleasurable as possible.
+              Persönliche Betreuung, individuelle Beratung und absolute
+              Zuverlässigkeit – wir kümmern uns darum, dass Sie genau das
+              bekommen, was Sie brauchen. Pünktlich, flexibel und effizient.
             </p>
           </div>
 
-          {/* Satisfaction Card */}
-          <div className="bg-[#FFF5EE] p-8 md:p-4 lg:p-8 rounded-lg shadow-[0_4px_20px_rgba(244,196,48,0.15)] hover:shadow-[0_8px_30px_rgba(244,196,48,0.2)] transition-shadow duration-300 text-center text-base  md:text-sm 2xl:text-base 2xl:w-96">
+          {/* Zufriedenheit */}
+          <div className="bg-[#FFF5EE] p-8 md:p-4 lg:p-8 rounded-lg shadow-[0_4px_20px_rgba(244,196,48,0.15)] hover:shadow-[0_8px_30px_rgba(244,196,48,0.2)] transition-shadow duration-300 text-center text-base md:text-sm 2xl:text-base 2xl:w-96">
             <div className="w-16 h-16 mx-auto mb-6">
               <Image
                 src="/icons/satisfaction.svg"
-                alt="Satisfaction Icon"
+                alt="Zufriedenheit Icon"
                 width={64}
                 height={64}
               />
             </div>
             <h3 className="text-[#F4C430] text-2xl lg:text-3xl mb-4 uppercase font-bold">
-              SATISFACTION
+              ZUFRIEDENHEIT
             </h3>
             <p className="text-gray-700">
-              We want to provide all our customers with 100% satisfaction. We
-              have been doing just that for our customers to date and we look
-              forward to continuing this well into the future.
+              Wir streben nach 100 % Zufriedenheit. Ob Gastronomie, Handel oder
+              Privatkunden – unsere Partner wissen: Bei Laylani&apos;s bekommen
+              sie konstant Spitzenqualität, die begeistert.
             </p>
           </div>
         </div>

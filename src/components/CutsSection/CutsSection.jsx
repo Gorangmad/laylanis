@@ -8,7 +8,7 @@ const cuts = [
     name: "Premium Steaks",
     image: "/images/products/argentine-ribeye.jpg",
     description:
-      "From tender filet mignon to rich ribeye and flavorful T-bone steaks.",
+      "Von zartem Filet Mignon über saftiges Ribeye bis hin zu geschmackvollem T-Bone Steak.",
     items: ["Filet Mignon", "Ribeye", "T-Bone", "Sirloin", "New York Strip"],
   },
   {
@@ -16,7 +16,7 @@ const cuts = [
     name: "Roasts",
     image: "/images/products/irish-striploin.jpg",
     description:
-      "Perfect for slow cooking, our roasts are ideal for family gatherings.",
+      "Ideal für langsames Garen – perfekt für Familienessen und Festtage.",
     items: ["Prime Rib", "Chuck Roast", "Rump Roast", "Brisket", "Pot Roast"],
   },
   {
@@ -24,7 +24,7 @@ const cuts = [
     name: "Ground & Minced",
     image: "/images/products/product1.png",
     description:
-      "Freshly ground meat perfect for burgers, meatballs, and more.",
+      "Frisch gehacktes Fleisch – ideal für Burger, Frikadellen und mehr.",
     items: [
       "Ground Beef",
       "Minced Pork",
@@ -37,7 +37,7 @@ const cuts = [
     id: 4,
     name: "Specialty Cuts",
     image: "/images/products/american-tomahawk.jpg",
-    description: "Unique cuts for specific dishes and cooking methods.",
+    description: "Besondere Zuschnitte für spezielle Gerichte und Zubereitungen.",
     items: [
       "Flank Steak",
       "Skirt Steak",
@@ -50,7 +50,7 @@ const cuts = [
     id: 5,
     name: "Chops",
     image: "/images/products/product2.png",
-    description: "Premium pork and lamb chops cut to perfection.",
+    description: "Erstklassige Schweine- und Lammkoteletts – perfekt zugeschnitten.",
     items: [
       "Pork Chops",
       "Lamb Chops",
@@ -63,7 +63,7 @@ const cuts = [
     id: 6,
     name: "Poultry Cuts",
     image: "/images/products/product3.png",
-    description: "Various cuts of chicken and turkey for every recipe.",
+    description: "Verschiedene Zuschnitte von Huhn und Pute für jedes Rezept.",
     items: ["Chicken Breast", "Thighs", "Wings", "Drumsticks", "Turkey Cuts"],
   },
 ];
@@ -118,7 +118,7 @@ const CutsSection = () => {
                   href="/contact"
                   className="inline-block mt-6 px-6 py-3 bg-[#F4C430] hover:bg-[#DAA520] text-white font-semibold rounded-lg transition-colors duration-300"
                 >
-                  Enquire Now
+                  Jetzt anfragen
                 </Link>
               </div>
             </div>

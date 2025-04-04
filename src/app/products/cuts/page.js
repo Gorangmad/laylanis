@@ -11,7 +11,7 @@ export default function CutsPage() {
     id,
     name: id.toUpperCase(),
     image: `${products[0].image}`,
-    description: `Discover our premium selection of ${id} cuts. Each piece is carefully selected and prepared to ensure the highest quality and perfect marbling.`,
+    description: `Entdecken Sie unsere exklusive Auswahl an ${id}-Cuts. Sorgfältig ausgewählt und perfekt vorbereitet – für echten Fleischgenuss auf höchstem Niveau.`,
     products,
   }));
 
@@ -37,16 +37,16 @@ export default function CutsPage() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center mt-8 mb-16 px-4">
           <h1 className="text-[#f7f1e8] text-2xl sm:text-3xl lg:text-4xl uppercase mb-4">
-            HUNGRY? WE HAVE...
+            FÜR FEINSCHMECKER & FLEISCHLIEBHABER
           </h1>
           <h1 className="text-[#F4C430] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 uppercase font-gin leading-tight tracking-wider [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)]">
-            QUALITY MEATS
+            PREMIUM CUTS
             <br />
-            FOR ALL OCCASIONS
+            VON LAYLANIS
           </h1>
           <p className="text-[#f7f1e8] text-base sm:text-lg lg:text-xl max-w-3xl mx-auto">
-            Whatever the occasion, we&apos;ve got you covered with a large
-            selection of Premium Quality Meats from around the world
+            Egal ob BBQ, Dinner oder Fine Dining – bei Laylanis finden Sie die
+            passende Auswahl an Premiumfleisch aus aller Welt. Qualität, der man vertraut.
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export default function CutsPage() {
                   {cut.name}
                 </h2>
                 <button className="inline-block border-2 border-[#f7f1e8] text-[#f7f1e8] px-8 py-2 uppercase tracking-wider text-sm hover:bg-[#f7f1e8] hover:text-[#1a1a1a] transition-all duration-300">
-                  VIEW MORE
+                  MEHR ERFAHREN
                 </button>
               </div>
             </Link>

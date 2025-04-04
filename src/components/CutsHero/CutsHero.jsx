@@ -8,43 +8,43 @@ const cuts = [
   {
     name: "HÜFTSTEAK",
     image: "/images/products/argentine-ribeye.jpg",
-    description: "Lean and flavorful cuts perfect for grilling and pan-searing",
+    description: "Mager und geschmackvoll – ideal zum Grillen oder Braten.",
     link: "#hueftsteak",
   },
   {
     name: "RIB-EYE STEAK",
     image: "/images/products/irish-striploin.jpg",
-    description: "Exceptionally marbled steaks with rich, bold flavor",
+    description: "Stark marmoriert mit intensivem, saftigem Geschmack.",
     link: "#ribeye",
   },
   {
     name: "RINDERFILET",
     image: "/images/products/argentine-ribeye.jpg",
-    description: "The most tender beef cut, trimmed to perfection",
+    description: "Das zarteste Stück – perfekt pariert für höchste Ansprüche.",
     link: "#rinderfilet",
   },
   {
     name: "ROASTBEEF",
     image: "/images/products/irish-striploin.jpg",
-    description: "Premium cuts from the finest rib and loin sections",
+    description: "Aus dem edelsten Rückenstück – vielseitig und aromatisch.",
     link: "#roastbeef",
   },
   {
     name: "RUMPSTEAK",
     image: "/images/products/argentine-ribeye.jpg",
-    description: "Perfect balance of flavor and tenderness",
+    description: "Klassisch, kräftig im Geschmack und fein marmoriert.",
     link: "#rumpsteak",
   },
   {
     name: "T-BONE STEAK",
     image: "/images/products/american-tomahawk.jpg",
-    description: "Two premium cuts in one - tenderloin and strip steak",
+    description: "Zwei edle Cuts in einem – Filet & Roastbeef vereint.",
     link: "#tbone",
   },
   {
     name: "SPECIAL CUTS",
     image: "/images/products/american-tomahawk.jpg",
-    description: "Unique specialty cuts for extraordinary occasions",
+    description: "Außergewöhnliche Zuschnitte für besondere Anlässe.",
     link: "#specialcuts",
   },
 ];
@@ -60,11 +60,11 @@ const CutsHero = () => {
 
   return (
     <section className="relative min-h-screen bg-[#1a1a1a] pt-32 pb-24">
-      {/* Background texture */}
+      {/* Hintergrundbild */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/hero-bg.jpeg"
-          alt="Background texture"
+          alt="Hintergrundtextur"
           fill
           className="object-cover object-center brightness-[50%]"
           priority
@@ -73,23 +73,23 @@ const CutsHero = () => {
       </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 lg:px-8">
-        {/* Hero Text */}
+        {/* Textbereich */}
         <div className="text-center mt-8 mb-16">
           <h1 className="text-[#f7f1e8] text-4xl lg:text-5xl uppercase mb-4">
-            EXPLORE OUR...
+            ENTDECKEN SIE UNSERE...
           </h1>
           <h1 className="text-[#F4C430] text-5xl lg:text-7xl font-bold mb-6 uppercase font-gin leading-tight tracking-wider [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)]">
             PREMIUM CUTS
             <br />
-            FOR EVERY DISH
+            FÜR JEDES GERICHT
           </h1>
           <p className="text-[#f7f1e8] text-lg lg:text-xl max-w-3xl mx-auto">
-            From tender steaks to succulent roasts, discover our expertly
-            prepared selection of premium meat cuts
+            Von zarten Steaks bis hin zu saftigen Braten – entdecken Sie unsere
+            fachmännisch zugeschnittene Auswahl an Premium-Fleisch.
           </p>
         </div>
 
-        {/* Cuts Cards Grid */}
+        {/* Cuts Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cuts.map((cut) => (
             <Link
@@ -111,7 +111,7 @@ const CutsHero = () => {
                   {cut.name}
                 </h2>
                 <button className="inline-block border-2 border-[#f7f1e8] text-[#f7f1e8] px-8 py-2 uppercase tracking-wider text-sm hover:bg-[#f7f1e8] hover:text-[#1a1a1a] transition-all duration-300">
-                  VIEW MORE
+                  MEHR ERFAHREN
                 </button>
               </div>
             </Link>

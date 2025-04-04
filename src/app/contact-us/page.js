@@ -1,13 +1,11 @@
 import NewsletterCTA from "@/components/NewsletterCTA/NewsletterCTA";
-import Testimonials from "@/components/Testimonials/Testimonials";
-import Timings from "@/components/Timings/Timings";
-import FAQ from "@/components/FAQ/FAQ";
-import Hero from "@/components/ui/Hero";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import Hero from "@/components/ui/Hero";
+
 export const metadata = {
-  title: "Contact Us | Liam's Quality Meats",
+  title: "Kontakt | Laylanis Premium Fleisch",
   description:
-    "Contact Liam's Quality Meats, your family butcher on the Costa Del Sol.",
+    "Kontaktieren Sie Laylanis – Ihr ehrlicher Fleischhändler mit hochwertigen Fleischsorten wie Wagyu, Dry Aged und mehr.",
 };
 
 export default function ContactUs() {
@@ -15,13 +13,10 @@ export default function ContactUs() {
     <main>
       <Hero
         backgroundImage="/hero-bg.jpeg"
-        tagline="SAY HELLO!"
-        title="we love to talk."
-        description="At Liam's Quality Meats Benavista we love to take care of our customers. Please feel free to contact us at any time. We have three main ways for you to get in touch below. We look forward to serving you soon."
+        tagline="JETZT KONTAKTIEREN"
+        title="Wir freuen uns auf Sie."
+        description="Bei Laylanis nehmen wir uns Zeit für unsere Kundinnen und Kunden. Ob Fragen, Bestellungen oder besondere Wünsche – wir sind jederzeit für Sie erreichbar. Nutzen Sie einfach das Kontaktformular oder schreiben Sie uns direkt. Wir freuen uns auf Ihre Nachricht!"
         showScrollIndicator={true}
-        // className="bg-black"
-        // showFloatingImage={true}
-        // floatingImage="/images/contact.png"
         showLottie={true}
         overlayOpacity={60}
         rotateValue={0}

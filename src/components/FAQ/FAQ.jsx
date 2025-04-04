@@ -2,28 +2,28 @@
 import React, { useState } from "react";
 
 const FAQ = () => {
-  const [openQuestion, setOpenQuestion] = useState("DO YOU DELIVER?");
+  const [openQuestion, setOpenQuestion] = useState("Liefern Sie auch?");
 
   const faqs = [
     {
-      question: "DO YOU DELIVER?",
+      question: "Liefern Sie auch?",
       answer:
-        "We do not have a full time delivery service at this time. However please give us a call and we can try to arrange a delivery for you. We understand that sometimes people cannot make it to the shop, and if that is the case we will do everything in our power to try and assist you. Please call or Whatsapp to find out more.",
+        "Für große Bestellungen bieten wir eine Lieferung an. Einzelpersonen können bequem vorbestellen und ihre Ware bei uns abholen. Kontaktieren Sie uns gerne für individuelle Absprachen.",
     },
     {
-      question: "WHAT PAYMENT METHODS DO YOU ACCEPT?",
+      question: "Wie kann ich am besten bestellen?",
       answer:
-        "We accept cash, all major credit/debit cards, and contactless payments.",
+        "Der schnellste und einfachste Weg ist über WhatsApp. Schreiben Sie uns Ihre Bestellung – wir kümmern uns um den Rest.",
     },
     {
-      question: "WHAT IS THE BEST WAY TO ORDER?",
+      question: "Was zeichnet Ihr Fleisch aus?",
       answer:
-        "The best way to order is to visit our shop in person or give us a call. We can discuss your requirements and ensure you get exactly what you need.",
+        "Wir führen nur ausgesuchtes Premium-Fleisch – von klassischen Zuschnitten bis hin zu Spezialitäten wie Wagyu. Unsere Auswahl gehört zu den besten in ganz Deutschland.",
     },
     {
-      question: "IS YOUR MEAT FRESH?",
+      question: "Wie kann ich Sie erreichen?",
       answer:
-        "Yes, all our meat is fresh and never frozen. We take great pride in the quality of our products.",
+        "Am besten erreichen Sie uns telefonisch oder per WhatsApp. Wir beraten Sie gerne persönlich und kümmern uns um Ihre Anliegen schnell und unkompliziert.",
     },
   ];
 
@@ -31,20 +31,19 @@ const FAQ = () => {
     <section className="w-full bg-[#FFF5EE] py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Heading */}
+          {/* Überschrift */}
           <h2 className="text-[#F4C430] text-[2.5rem] lg:text-[4rem] mb-6 uppercase font-bold tracking-wide">
             FAQ
           </h2>
 
-          {/* Description */}
+          {/* Beschreibung */}
           <p className="text-gray-700 text-[0.875rem] lg:text-[1.1rem] leading-[1.8] tracking-wide max-w-4xl mx-auto mb-6">
-            At Laylani&apos;s Quality meats we are always on hand to answer any
-            of your questions. Just give us a call or text on Whatsapp and we
-            will be happy to assist you. Below are some frequently asked
-            questions by our customers.
+            Bei Laylani's Premium Fleisch beantworten wir Ihre Fragen gerne
+            persönlich. Rufen Sie uns einfach an oder schreiben Sie uns auf
+            WhatsApp. Hier finden Sie die häufigsten Fragen unserer Kunden.
           </p>
 
-          {/* Divider */}
+          {/* Trennlinie */}
           <div className="w-40 h-0.5 bg-[#F4C430] mx-auto mb-16"></div>
 
           {/* FAQ Items */}
@@ -74,7 +73,7 @@ const FAQ = () => {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="p-3   text-gray-700 text-[0.875rem] lg:text-[1.1rem] leading-[1.8] tracking-wide">
+                    <div className="p-3 text-gray-700 text-[0.875rem] lg:text-[1.1rem] leading-[1.8] tracking-wide">
                       {faq.answer}
                     </div>
                   </div>

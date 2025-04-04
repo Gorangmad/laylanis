@@ -56,7 +56,7 @@ const InfinitySlider = () => {
   return (
     <div className="w-full overflow-hidden  bg-[#fff5ee] py-8 rounded-lg shadow-md">
       <h2 className="text-4xl md:text-5xl text-center font-bold mt-6  mb-12 uppercase tracking-wider text-[#F4C430]">
-        Our Partners
+        Unsere Partner
       </h2>
 
       <div

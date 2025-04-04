@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 const ProductCard = ({ product }) => {
   if (!product) return null;
 
-  // ✅ Preload images when the component mounts (reduces delay)
+  // ✅ Bild vorladen für bessere UX
   useEffect(() => {
     const img = new Image();
     img.src = product.image;
@@ -15,35 +15,35 @@ const ProductCard = ({ product }) => {
       {/* Mobile Layout */}
       <div className="block md:hidden">
         <div className="space-y-8">
-          {/* Title */}
+          {/* Titel */}
           <h2 className="text-[#F4C430] [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)] text-4xl sm:text-5xl text-center uppercase tracking-wide">
             {product.name}
           </h2>
 
-          {/* Description */}
+          {/* Beschreibung */}
           <p className="text-white text-center font-light max-w-md mx-auto">
             {product.description}
           </p>
 
-          {/* Image */}
+          {/* Bild */}
           <div className="relative w-full aspect-[3/3] max-w-[350px] mx-auto my-8">
             <img
               src={product.image}
               alt={product.name}
               className="object-contain w-full h-full"
-              loading="lazy" // ✅ Lazy load for better performance
+              loading="lazy"
             />
           </div>
 
-          {/* Price */}
+          {/* Preis */}
           <p className="text-white text-lg text-center tracking-wide mb-8">
-            FROM €{product.price} PER/KG
+            AB €{product.price} PRO KG
           </p>
 
-          {/* Perfect For */}
+          {/* Perfekt für */}
           <div className="max-w-xs mx-auto">
             <p className="text-[#F4C430] text-lg mb-6 uppercase tracking-wider font-bold text-center">
-              PERFECT FOR
+              PERFEKT FÜR
             </p>
             <div className="flex justify-center gap-8">
               {product.perfectFor.map((item) => (
@@ -57,7 +57,7 @@ const ProductCard = ({ product }) => {
                       alt={item}
                       width={48}
                       height={48}
-                      loading="lazy" // ✅ Lazy load icons
+                      loading="lazy"
                     />
                   </div>
                   <span className="text-white text-sm uppercase">{item}</span>
@@ -70,7 +70,7 @@ const ProductCard = ({ product }) => {
 
       {/* Desktop Layout */}
       <div className="hidden md:grid md:grid-cols-4 md:items-center">
-        {/* Left Column - Product Info */}
+        {/* Linke Spalte – Info */}
         <div className="md:col-span-1">
           <h2 className="text-[#F4C430] [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)] text-5xl mb-10 uppercase tracking-wide">
             {product.name}
@@ -79,27 +79,27 @@ const ProductCard = ({ product }) => {
             {product.description}
           </p>
           <p className="text-white text-sm lg:text-lg tracking-wide mb-6">
-            FROM €{product.price} PER/KG
+            AB €{product.price} PRO KG
           </p>
         </div>
 
-        {/* Center Column - Product Image */}
+        {/* Mitte – Bild */}
         <div className="md:col-span-2 flex justify-center items-center">
           <div className="relative w-[520px] h-[700px]">
             <img
               src={product.image}
               alt={product.name}
               className="object-contain w-full h-full"
-              loading="eager" // ✅ Preload for instant display
+              loading="eager"
             />
           </div>
         </div>
 
-        {/* Right Column - Perfect For */}
+        {/* Rechte Spalte – Perfekt für */}
         <div className="md:col-span-1 lg:pl-16">
           <div className="text-start">
             <p className="text-[#F4C430] text-lg mb-8 uppercase tracking-wider font-bold">
-              PERFECT FOR
+              PERFEKT FÜR
             </p>
             <div className="space-y-6">
               {product.perfectFor.map((item) => (
@@ -114,7 +114,7 @@ const ProductCard = ({ product }) => {
                       alt={item}
                       width={48}
                       height={48}
-                      loading="lazy" // ✅ Lazy load icons
+                      loading="lazy"
                     />
                   </div>
                 </div>

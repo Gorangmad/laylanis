@@ -14,16 +14,15 @@ export const metadata = {
 export default function AboutUs() {
   return (
     <main>
-      <Hero
-        backgroundImage="/images/about-3.jpg"
-        tagline="WELCOME TO..."
-        title="LIAM'S QUALITY MEATS."
-        description="We would like to wish you a warm welcome to our family Butcher's. Liam's Quality Meats is your one stop shop for all your meat needs on the Costa Del Sol. We look forward to welcoming you in store soon."
-        showScrollIndicator={true}
-        // className="bg-black"
-        overlayOpacity={60}
-        className={"lg:pb-40 pt-0"}
-      />
+    <Hero
+      backgroundImage="/images/about-3.jpg"
+      tagline="WILLKOMMEN BEI..."
+      title="LAYLANIS PREMIUM FLEISCH."
+      description="Laylanis ist Ihr ehrlicher Fleischhändler mit Leidenschaft für Qualität. Ob klassische Cuts oder exklusive Sorten wie Wagyu – bei uns finden Sie eine sorgfältig ausgewählte Vielfalt an hochwertigem Fleisch. Wir freuen uns darauf, Sie bald persönlich begrüßen zu dürfen."
+      showScrollIndicator={true}
+      overlayOpacity={60}
+      className={"lg:pb-40 pt-0"}
+    />
       <Testimonials />
       <InfinitySlider />
       <Timings />

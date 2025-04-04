@@ -8,25 +8,25 @@ const countries = [
   {
     name: "MEATS OF ARGENTINA",
     image: "/images/countries/argentina.jpg",
-    description: "Premium grass-fed beef from the Pampas region",
+    description: "Premium-Weiderind aus der Region Pampas",
     link: "#argentina",
   },
   {
     name: "MEATS OF IRELAND",
     image: "/images/countries/ireland.png",
-    description: "High-quality grass-fed beef from Irish farms",
+    description: "Hochwertiges Weiderind von irischen Bauernhöfen",
     link: "#ireland",
   },
   {
     name: "MEATS OF URUGUAY",
     image: "/images/countries/uruguay.jpg",
-    description: "Exceptional grass-fed beef from South American plains",
+    description: "Ausgezeichnetes Weiderind aus den Ebenen Südamerikas",
     link: "#uruguay",
   },
   {
     name: "MEATS OF USA",
     image: "/images/countries/usa.jpg",
-    description: "Premium grain-fed beef from select American farms",
+    description: "Premium-Maisrindfleisch aus ausgewählten US-Farmen",
     link: "#usa",
   },
 ];
@@ -42,11 +42,11 @@ const OriginHero = () => {
 
   return (
     <section className="relative min-h-screen bg-[#1a1a1a] pt-32 pb-24">
-      {/* Background texture */}
+      {/* Hintergrundbild */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/hero-bg.jpeg"
-          alt="Background texture"
+          alt="Hintergrundtextur"
           fill
           className="object-cover object-center brightness-[50%]"
           priority
@@ -55,23 +55,22 @@ const OriginHero = () => {
       </div>
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-4 lg:px-8">
-        {/* Hero Text */}
+        {/* Überschrift */}
         <div className="text-center mt-8 mb-16">
           <h1 className="text-[#f7f1e8] text-4xl lg:text-5xl uppercase mb-4">
-            HUNGRY? WE HAVE...
+            HUNGRIG? WIR HABEN...
           </h1>
           <h1 className="text-[#F4C430] text-5xl lg:text-7xl font-bold mb-6 uppercase font-gin leading-tight tracking-wider [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)]">
-            QUALITY MEATS
+            QUALITÄTSFLEISCH
             <br />
-            FOR ALL OCCASIONS
+            FÜR JEDEN ANLASS
           </h1>
           <p className="text-[#f7f1e8] text-lg lg:text-xl max-w-3xl mx-auto">
-            Whatever the occasion, we&apos;ve got you covered with a large
-            selection of Premium Quality Meats from around the world
+            Ob Alltag oder Festtag – bei uns finden Sie eine große Auswahl an hochwertigem Fleisch aus aller Welt.
           </p>
         </div>
 
-        {/* Country Cards Grid */}
+        {/* Länderkarten */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {countries.map((country) => (
             <Link
@@ -85,15 +84,16 @@ const OriginHero = () => {
                   src={country.image}
                   alt={country.name}
                   fill
-                  className="object-cover "
+                  className="object-cover"
                 />
               </div>
               <div className="p-6 text-center">
                 <h2 className="text-[#f7f1e8] text-2xl lg:text-3xl mb-4 font-gin">
                   {country.name}
                 </h2>
+                <p className="text-[#f7f1e8]/80 text-sm mb-4">{country.description}</p>
                 <button className="inline-block border-2 border-[#f7f1e8] text-[#f7f1e8] px-8 py-2 uppercase tracking-wider text-sm hover:bg-[#f7f1e8] hover:text-[#1a1a1a] transition-all duration-300">
-                  VIEW MORE
+                  MEHR ANZEIGEN
                 </button>
               </div>
             </Link>
