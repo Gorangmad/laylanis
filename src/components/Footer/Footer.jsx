@@ -58,14 +58,6 @@ const Footer = () => {
                     Meats
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/lyndas-tapas"
-                    className="text-neutral-400 hover:text-white transition-colors"
-                  >
-                    Lynda&apos;s Tapas
-                  </Link>
-                </li>
               </ul>
             </div>
 
@@ -126,7 +118,7 @@ const Footer = () => {
               <h3 className="text-white text-xl uppercase mb-6">
                 OPENING TIMES
               </h3>
-              <p className="text-neutral-400">Montag - Sat&nbsp;&nbsp;&nbsp;04:00 - 15:00</p>
+              <p className="text-neutral-400">Montag - Samstag&nbsp;&nbsp;&nbsp;04:00 - 15:00</p>
             </div>
           </div>
         </div>
