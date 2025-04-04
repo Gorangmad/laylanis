@@ -13,19 +13,20 @@ export default function Home() {
     <main>
       <Hero
         backgroundImage="/hero-bg.jpeg"
-        tagline="COSTA DEL SOL"
+        tagline="LAYLANI'S"
         title={
           <>
-            PREMIUM QUALITY <br /> BUTCHERS.
+            PREMIUM FLEISCH <br /> AUS ALLER WELT.
           </>
         }
-        description="Located in Benavista, close to Puerto Banus Liam's Quality Meats is your one stop shop for premium cuts of meat on the coast."
-        buttonText="View Products"
+        description="Laylani’s ist dein zuverlässiger Fleischgroßhändler aus Deutschland – spezialisiert auf Premium Cuts, internationale Herkunft und erstklassige Qualität für Gastronomie, Feinkost & Fleischliebhaber."
+        buttonText="Jetzt Sortiment entdecken"
         buttonLink="/products"
         showFloatingImage={true}
         floatingImage="/meat-1.png"
         showScrollIndicator={true}
       />
+
       <About />
       <FeaturesCard2 />
       <NewsletterCTA />
