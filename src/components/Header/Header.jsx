@@ -75,7 +75,7 @@ const Header = () => {
                         </svg>
                       </div>
                       <h3 className="text-xl font-bold text-gray-800 mb-4">
-                        SHOP BY ORIGIN
+                        HERKUNFT
                       </h3>
                       <Link
                         href="/products/origin"
@@ -99,7 +99,7 @@ const Header = () => {
                         </svg>
                       </div>
                       <h3 className="text-xl font-bold text-gray-800 mb-4">
-                        SHOP BY CUT
+                       TEILSTÜCKE
                       </h3>
                       <Link
                         href="/products/cuts"
@@ -186,7 +186,7 @@ const Header = () => {
                     </svg>
                   </div>
                   <span className="text-gray-800 text-sm font-medium">
-                    SHOP BY ORIGIN
+                    HERKUNFT
                   </span>
                 </Link>
                 <Link
@@ -204,7 +204,7 @@ const Header = () => {
                     </svg>
                   </div>
                   <span className="text-gray-800 text-sm font-medium">
-                    SHOP BY CUT
+                    TEILSTÜCKE
                   </span>
                 </Link>
               </div>

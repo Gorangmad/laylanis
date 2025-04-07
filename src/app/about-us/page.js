@@ -6,10 +6,11 @@ import FAQ from "@/components/FAQ/FAQ";
 import Hero from "@/components/ui/Hero";
 import InfinitySlider from "@/components/InfinitySlider/InfinitySlider";
 export const metadata = {
-  title: "About Us | Liam's Quality Meats",
+  title: "Über uns | Laylani's Premium Fleischgroßhandel",
   description:
-    "Learn more about Liam's Quality Meats, your family butcher on the Costa Del Sol.",
+    "Erfahre mehr über Laylani's – dein zuverlässiger Fleischgroßhändler für Premium-Qualität, internationale Cuts und höchste Frische, direkt aus Deutschland.",
 };
+
 
 export default function AboutUs() {
   return (
