@@ -98,9 +98,9 @@ const Footer = () => {
               <p className="text-neutral-400">
                 Laylani&apos;s Quality Meats
                 <br />
-                Carl-Benz-Str. 16
+                Südbahnhofstrasse
                 <br />
-                60314 Frankfurt am Main
+                19 Aschaffenburg
               </p>
             </div>
 
@@ -118,7 +118,9 @@ const Footer = () => {
               <h3 className="text-white text-xl uppercase mb-6">
                 OPENING TIMES
               </h3>
-              <p className="text-neutral-400">Montag - Samstag&nbsp;&nbsp;&nbsp;04:00 - 15:00</p>
+              <p className="text-neutral-400">
+                Montag - Samstag&nbsp;&nbsp;&nbsp;04:00 - 15:00
+              </p>
             </div>
           </div>
         </div>
@@ -155,7 +157,7 @@ const Footer = () => {
         <div className="border-t border-neutral-700">
           <div className="max-w-7xl mx-auto px-4 lg:px-8 py-6">
             <div className="text-center text-neutral-400 text-sm">
-              <p>2021 All Rights Reserved Laylani&apos;s Quality Meats</p>
+              <p>2025 All Rights Reserved Laylani&apos;s Quality Meats</p>
               <p className="mt-1"></p>
             </div>
           </div>
