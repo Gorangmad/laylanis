@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Button from "../ui/Button";
 import { Fade } from "react-awesome-reveal";
+import emailjs from "@emailjs/browser"; // ✅ Import EmailJS
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -27,14 +28,25 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulierter Versand – hier deine echte Logik einfügen
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const result = await emailjs.send(
+        "service_jnjnx3j", // Service ID
+        "template_eb00k1n", // Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "H3taooqadCxmrhU3S" // Public Key
+      );
+
+      console.log("Email sent:", result.text);
       setSubmitSuccess(true);
       setFormData({ name: "", email: "", message: "" });
+
       setTimeout(() => setSubmitSuccess(false), 3000);
     } catch (error) {
-      console.error("Fehler beim Versenden des Formulars:", error);
+      console.error("Fehler beim Senden:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -43,7 +55,7 @@ export default function ContactForm() {
   return (
     <section className="w-full bg-[#fff] text-black py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 min-h-screen flex items-center justify-center">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-        {/* Linke Seite mit Icon */}
+        {/* Left side */}
         <div className="w-full lg:w-1/3 flex justify-center mb-8 lg:mb-0">
           <Fade direction="left">
             <div className="bg-[#fffcee] rounded-full p-8 sm:p-10 md:p-12 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 flex items-center justify-center">
@@ -60,7 +72,7 @@ export default function ContactForm() {
           </Fade>
         </div>
 
-        {/* Rechte Seite mit Formular */}
+        {/* Right side */}
         <div className="w-full lg:w-2/3">
           <Fade direction="up" cascade={true} damping={0.2}>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#F4C430] mb-3 sm:mb-4 tracking-wide">
