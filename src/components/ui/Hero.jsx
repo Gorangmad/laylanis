@@ -6,6 +6,7 @@ import Link from "next/link";
 import Button from "./Button";
 
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { Fade } from "react-awesome-reveal";
 
 const Hero = ({
   backgroundImage,
@@ -83,9 +84,11 @@ const Hero = ({
           )}
 
           {title && (
-            <h1 className="text-[#f7f1e8] font-gin text-[7vw] lg:text-[4.5vw] font-bold mb-4 lg:mb-6 leading-tight uppercase">
-              {title}
-            </h1>
+            <Fade cascade={false} direction="up">
+              <h1 className="text-[#f7f1e8] font-gin text-[7vw] lg:text-[4.5vw] font-bold mb-4 lg:mb-6 leading-tight uppercase">
+                {title}
+              </h1>
+            </Fade>
           )}
 
           {description && (

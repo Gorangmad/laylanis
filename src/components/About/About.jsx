@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/components/ui/Button";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
@@ -23,22 +24,26 @@ const About = () => {
 
           {/* Rechter Textbereich */}
           <div className="text-center lg:text-left">
-            <h2 className="text-[#DAA520] tracking-[0.2em] text-2xl lg:text-3xl mb-6">
-              HERZLICH WILLKOMMEN
-            </h2>
-            <h3 className="text-[#000000] font-bold text-4xl lg:text-5xl mb-8">
-              Laylani's –
-              <br />
-              IHR FLEISCHGROßHÄNDLER.
-            </h3>
-            <p className="text-[#000000] text-lg lg:text-xl mb-10 max-w-xl mx-auto lg:mx-0">
-              Wir heißen Sie herzlich willkommen bei Laylani’s – Ihrem
-              zuverlässigen Partner für Premium-Fleisch im Großhandel. Wir
-              beliefern Restaurants, Hotels und Fachhändler mit hochwertigem
-              Fleisch aus aller Welt – von klassischen Cuts bis hin zu
-              exklusiven Sorten wie Wagyu. Qualität, Zuverlässigkeit und
-              persönlicher Service stehen bei uns an erster Stelle.
-            </p>
+            <Fade direction="left">
+              <h2 className="text-[#DAA520] tracking-[0.2em] text-2xl lg:text-3xl mb-6">
+                HERZLICH WILLKOMMEN
+              </h2>
+            </Fade>
+            <Fade direction="up" cascade={true}>
+              <h3 className="text-[#000000] font-bold text-4xl lg:text-5xl mb-8">
+                Laylani's –
+                <br />
+                IHR FLEISCHGROßHÄNDLER.
+              </h3>
+              <p className="text-[#000000] text-lg lg:text-xl mb-10 max-w-xl mx-auto lg:mx-0">
+                Wir heißen Sie herzlich willkommen bei Laylani’s – Ihrem
+                zuverlässigen Partner für Premium-Fleisch im Großhandel. Wir
+                beliefern Restaurants, Hotels und Fachhändler mit hochwertigem
+                Fleisch aus aller Welt – von klassischen Cuts bis hin zu
+                exklusiven Sorten wie Wagyu. Qualität, Zuverlässigkeit und
+                persönlicher Service stehen bei uns an erster Stelle.
+              </p>
+            </Fade>
             <Link href="/about-us">
               <Button variant="secondary" className="text-sm tracking-wider">
                 MEHR ÜBER UNS

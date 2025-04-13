@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 const NewsletterCTA = () => {
   return (
@@ -8,11 +9,13 @@ const NewsletterCTA = () => {
           <h2 className="text-[#f7f1e8] text-4xl lg:text-5xl font-bold mb-6 uppercase tracking-wider">
             LET&apos;S STAY IN TOUCH
           </h2>
-          <p className="text-[#f7f1e8] text-lg lg:text-xl mb-12 leading-relaxed max-w-3xl mx-auto">
-            We would love to keep you updated of new arrivals and special
-            offers. Enter your email below to never miss out on what&apos;s hot
-            at Laylani&apos;s Quality Meats!
-          </p>
+          <Fade direction="up">
+            <p className="text-[#f7f1e8] text-lg lg:text-xl mb-12 leading-relaxed max-w-3xl mx-auto">
+              We would love to keep you updated of new arrivals and special
+              offers. Enter your email below to never miss out on what&apos;s
+              hot at Laylani&apos;s Quality Meats!
+            </p>
+          </Fade>
 
           {/* Newsletter Form */}
           <form className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">

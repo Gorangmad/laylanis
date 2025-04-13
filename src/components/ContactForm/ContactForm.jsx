@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Button from "../ui/Button";
+import { Fade } from "react-awesome-reveal";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -44,30 +45,34 @@ export default function ContactForm() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
         {/* Linke Seite mit Icon */}
         <div className="w-full lg:w-1/3 flex justify-center mb-8 lg:mb-0">
-          <div className="bg-[#fffcee] rounded-full p-8 sm:p-10 md:p-12 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 flex items-center justify-center">
-            <div className="w-24 sm:w-28 md:w-32 lg:w-36">
-              <Image
-                src="/icons/message.svg"
-                alt="Kontakt"
-                width={150}
-                height={150}
-                className="w-full h-full"
-              />
+          <Fade direction="left">
+            <div className="bg-[#fffcee] rounded-full p-8 sm:p-10 md:p-12 w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 flex items-center justify-center">
+              <div className="w-24 sm:w-28 md:w-32 lg:w-36">
+                <Image
+                  src="/icons/message.svg"
+                  alt="Kontakt"
+                  width={150}
+                  height={150}
+                  className="w-full h-full"
+                />
+              </div>
             </div>
-          </div>
+          </Fade>
         </div>
 
         {/* Rechte Seite mit Formular */}
         <div className="w-full lg:w-2/3">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#F4C430] mb-3 sm:mb-4 tracking-wide">
-            SCHREIBEN SIE UNS.
-          </h2>
-          <p className="mb-6 sm:mb-8 text-base sm:text-lg">
-            Für allgemeine Anfragen können Sie uns gerne direkt über dieses
-            Formular kontaktieren. Wir melden uns schnellstmöglich bei Ihnen
-            zurück. In dringenden Fällen empfehlen wir, uns telefonisch zu
-            erreichen.
-          </p>
+          <Fade direction="up" cascade={true} damping={0.2}>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#F4C430] mb-3 sm:mb-4 tracking-wide">
+              SCHREIBEN SIE UNS.
+            </h2>
+            <p className="mb-6 sm:mb-8 text-base sm:text-lg">
+              Für allgemeine Anfragen können Sie uns gerne direkt über dieses
+              Formular kontaktieren. Wir melden uns schnellstmöglich bei Ihnen
+              zurück. In dringenden Fällen empfehlen wir, uns telefonisch zu
+              erreichen.
+            </p>
+          </Fade>
 
           <form
             onSubmit={handleSubmit}

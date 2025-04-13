@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import ProductCard from "../ProductCard/ProductCard";
 import ProductsSection from "../ProductsSection/ProductsSection";
+import { Fade } from "react-awesome-reveal";
 
 const defaultCut = {
   id: "steaks",
@@ -20,24 +21,28 @@ const CutSection = ({ cut = defaultCut }) => {
         {/* Cut Header */}
         <div className="flex flex-col md:flex-row items-center gap-20 mb-16 w-5/6 mx-auto">
           {/* Cut Image */}
-          <div className="relative w-[350px] h-[200px] flex-shrink-0 border-4 border-[#F4C430] rounded-sm overflow-hidden shadow-[0_0_20px_rgba(244,196,48,0.2)]">
-            <Image
-              src={cut.image}
-              alt={`${cut.name} cut`}
-              fill
-              className="object-cover"
-            />
-          </div>
+          <Fade direction="left">
+            <div className="relative w-[350px] h-[200px] flex-shrink-0 border-4 border-[#F4C430] rounded-sm overflow-hidden shadow-[0_0_20px_rgba(244,196,48,0.2)]">
+              <Image
+                src={cut.image}
+                alt={`${cut.name} cut`}
+                fill
+                className="object-cover"
+              />
+            </div>
+          </Fade>
 
           {/* Cut Info */}
-          <div className="flex-grow">
-            <h2 className="text-[#F4C430] text-4xl font-gin mb-4 [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)]">
-              {cut.name}
-            </h2>
-            <p className="text-[#f7f1e8]/80 text-lg leading-relaxed max-w-3xl">
-              {cut.description}
-            </p>
-          </div>
+          <Fade direction="up">
+            <div className="flex-grow">
+              <h2 className="text-[#F4C430] text-4xl font-gin mb-4 [text-shadow:_0_1px_2px_rgba(0,0,0,0.2)]">
+                {cut.name}
+              </h2>
+              <p className="text-[#f7f1e8]/80 text-lg leading-relaxed max-w-3xl">
+                {cut.description}
+              </p>
+            </div>
+          </Fade>
         </div>
 
         {/* Products Section */}
