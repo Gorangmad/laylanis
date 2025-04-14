@@ -30,6 +30,19 @@ const countries = [
     description: "Premium-Maisrindfleisch aus ausgewählten US-Farmen",
     link: "#usa",
   },
+  {
+    name: "MEATS OF AUSTRALIA",
+    image: "/images/countries/australia.jpg",
+    description:
+      "Premium-Maisrindfleisch aus ausgewählten australischen Farmen",
+    link: "#australia",
+  },
+  {
+    name: "MEATS OF JAPAN",
+    image: "/images/countries/japan.jpg",
+    description: "Premium-Maisrindfleisch aus ausgewählten japanischen Farmen",
+    link: "#japan",
+  },
 ];
 
 const OriginHero = () => {

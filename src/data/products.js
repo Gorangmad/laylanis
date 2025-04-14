@@ -352,6 +352,78 @@ export const allProducts = {
         },
       ],
     },
+    australia: {
+      id: "australia",
+      name: "MEATS OF AUSTRALIA",
+      flag: "/images/countries/australia.jpg",
+      description:
+        "Premium-Maisrindfleisch aus ausgewählten australischen Farmen",
+      products: [
+        {
+          id: 1,
+          name: "Roastbeef Australia",
+          description:
+            "Zartes australisches Roastbeef, perfekt für saftige Braten oder feine Steakscheiben.",
+          price: "ab 11,49€ / 100g",
+          image: "/images/products/countries/australia/product-1.webp",
+          perfectFor: ["BBQ", "GRILLING"],
+        },
+        {
+          id: 2,
+          name: "Ribeye Australia",
+          description:
+            "Marmoriertes australisches Ribeye für ein intensives Geschmackserlebnis vom Grill oder aus der Pfanne.",
+          price: "ab 13,49€ / 100g",
+          image: "/images/products/countries/australia/product-2.webp",
+          perfectFor: ["BBQ", "GRILLING"],
+        },
+        {
+          id: 3,
+          name: "Filet Australia",
+          description:
+            "Extrem zartes Filet aus australischem Rindfleisch – die edelste Wahl für besondere Anlässe.",
+          price: "ab 15,99€ / 100g",
+          image: "/images/products/countries/australia/product-3.webp",
+          perfectFor: ["BBQ", "GRILLING"],
+        },
+      ],
+    },
+    japan: {
+      id: "japan",
+      name: "MEATS OF JAPAN",
+      flag: "/images/countries/japan.jpg",
+      description:
+        "Premium-Maisrindfleisch aus ausgewählten australischen Farmen",
+      products: [
+        {
+          id: 1,
+          name: "Roastbeef Japan",
+          description:
+            "Zartes australisches Roastbeef, perfekt für saftige Braten oder feine Steakscheiben.",
+          price: "ab 11,49€ / 100g",
+          image: "/images/products/countries/japan/product-1.webp",
+          perfectFor: ["BBQ", "GRILLING"],
+        },
+        {
+          id: 2,
+          name: "Ribeye Japan",
+          description:
+            "Marmoriertes australisches Ribeye für ein intensives Geschmackserlebnis vom Grill oder aus der Pfanne.",
+          price: "ab 13,49€ / 100g",
+          image: "/images/products/countries/japan/product-2.png",
+          perfectFor: ["BBQ", "GRILLING"],
+        },
+        {
+          id: 3,
+          name: "Filet Japan",
+          description:
+            "Extrem zartes Filet aus australischem Rindfleisch – die edelste Wahl für besondere Anlässe.",
+          price: "ab 15,99€ / 100g",
+          image: "/images/products/countries/japan/product-3.png",
+          perfectFor: ["BBQ", "GRILLING"],
+        },
+      ],
+    },
   },
   cuts: {
     hueftsteak: [

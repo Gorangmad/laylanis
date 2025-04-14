@@ -16,7 +16,8 @@ const countryData = {
       {
         id: 1,
         name: "Argentinisches Ribeye",
-        description: "Premium Ribeye von grasgefütterten Rindern mit exzellenter Marmorierung",
+        description:
+          "Premium Ribeye von grasgefütterten Rindern mit exzellenter Marmorierung",
         price: "39.99",
         image: "/images/products/argentine-ribeye.jpg",
       },
@@ -67,6 +68,40 @@ const countryData = {
       {
         id: 1,
         name: "US Tomahawk",
+        description: "Tomahawk-Steak aus Getreidefütterung in Spitzenqualität",
+        price: "49.99",
+        image: "/images/products/american-tomahawk.jpg",
+      },
+      // Weitere Produkte hinzufügen...
+    ],
+  },
+  australia: {
+    id: "australia",
+    name: "FLEISCH AUS DEN AUSTRALIA",
+    flag: "/images/countries/australia.jpg",
+    description:
+      "US-amerikanisches Rindfleisch ist für seine hochwertige Getreide-Endmast bekannt, die zu besonders zartem und marmoriertem Fleisch führt. Unsere Auswahl stammt von ausgewählten Premium-Farmen mit höchsten Qualitätsstandards.",
+    products: [
+      {
+        id: 1,
+        name: "AUSTRALIA Tomahawk",
+        description: "Tomahawk-Steak aus Getreidefütterung in Spitzenqualität",
+        price: "49.99",
+        image: "/images/products/american-tomahawk.jpg",
+      },
+      // Weitere Produkte hinzufügen...
+    ],
+  },
+  japan: {
+    id: "japan",
+    name: "FLEISCH AUS DEN JAPAN",
+    flag: "/images/countries/japan.jpg",
+    description:
+      "US-amerikanisches Rindfleisch ist für seine hochwertige Getreide-Endmast bekannt, die zu besonders zartem und marmoriertem Fleisch führt. Unsere Auswahl stammt von ausgewählten Premium-Farmen mit höchsten Qualitätsstandards.",
+    products: [
+      {
+        id: 1,
+        name: "JAPAN Tomahawk",
         description: "Tomahawk-Steak aus Getreidefütterung in Spitzenqualität",
         price: "49.99",
         image: "/images/products/american-tomahawk.jpg",

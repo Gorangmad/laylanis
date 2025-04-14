@@ -4,27 +4,58 @@ import React, { useState, useEffect } from "react";
 
 const InfinitySlider = () => {
   const [logos, setLogos] = useState([
-    { id: 1, name: "Nike", url: "/logos/partner-1.png", color: "#f0f0f0" },
-    { id: 2, name: "Apple", url: "/logos/partner-2.png", color: "#e0e0e0" },
-    { id: 3, name: "Google", url: "/logos/partner-3.png", color: "#d0d0d0" },
-    { id: 4, name: "Amazon", url: "/logos/partner-1.png", color: "#c0c0c0" },
+    {
+      id: 1,
+      name: "Star Ranch Angus",
+      url: "/logos/partner-1.webp",
+      color: "#f0f0f0",
+    },
+    {
+      id: 2,
+      name: "Creekstone Farms",
+      url: "/logos/partner-2.jpg",
+      color: "#e0e0e0",
+    },
+    {
+      id: 3,
+      name: "World Steak Challenge",
+      url: "/logos/partner-3.jpg",
+      color: "#d0d0d0",
+    },
+    {
+      id: 4,
+      name: "Australian 2GR",
+      url: "/logos/partner-4.png",
+      color: "#c0c0c0",
+    },
     {
       id: 5,
-      name: "Microsoft",
-      url: "/logos/partner-2.png",
+      name: "Devesa",
+      url: "/logos/partner-5.png",
       color: "#b0b0b0",
     },
-    { id: 6, name: "Tesla", url: "/logos/partner-3.png", color: "#a0a0a0" },
+    {
+      id: 6,
+      name: "Wagyu Japanese Beef",
+      url: "/logos/partner-6.png",
+      color: "#a0a0a0",
+    },
     {
       id: 7,
-      name: "Samsung",
-      url: "/logos/partner-1.png",
+      name: "Jacks Creek",
+      url: "/logos/partner-7.png",
       color: "#909090",
     },
     {
       id: 8,
-      name: "Facebook",
-      url: "/logos/partner-2.png",
+      name: "Frimsa S.A",
+      url: "/logos/partner-8.png",
+      color: "#808080",
+    },
+    {
+      id: 9,
+      name: "ArreBeef",
+      url: "/logos/partner-9.png",
       color: "#808080",
     },
   ]);
