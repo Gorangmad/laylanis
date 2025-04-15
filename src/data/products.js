@@ -401,7 +401,7 @@ export const allProducts = {
           description:
             "Zartes australisches Roastbeef, perfekt für saftige Braten oder feine Steakscheiben.",
           price: "ab 11,49€ / 100g",
-          image: "/images/products/countries/japan/product-1.webp",
+          image: "/images/products/countries/japan/product-1.png",
           perfectFor: ["BBQ", "GRILLING"],
         },
         {
@@ -813,6 +813,37 @@ export const allProducts = {
         price: 79.95,
         image: "/images/products/cuts/tbone/product-3.webp",
         perfectFor: ["STEAKHOUSE", "GRILLING"],
+      },
+    ],
+    picanha: [
+      {
+        id: 1,
+        name: "WAGYU RUMP CAP PICANHA, BMS 4-5",
+        description:
+          "Introducing our Wagyu Rump Cap Picanha! The Wagyu rump cap, also known as picanha",
+        price: 54.95,
+        image: "/images/products/cuts/picanha/product-1.png",
+        perfectFor: ["GRILLING", "STEAKHOUSE"],
+      },
+      {
+        id: 2,
+        name: "WAGYU RUMP STEAK PICANHA, BMS 4-5",
+        description:
+          "Introducing Wagyu Rump Steak Picanha, BMS 4-5! Wagyu rump steak picanha, BMS 4-5, offers an unparalleled dining experience,",
+        price: 69.95,
+        image: "/images/products/cuts/picanha/product-2.png",
+        perfectFor: ["GOURMET-COOKING", "SPECIAL-OCCASIONS"],
+      },
+    ],
+    rinderkugel: [
+      {
+        id: 1,
+        name: "KUGEL RIND",
+        description:
+          "Introducing our ! The Wagyu rump cap, also known as picanha",
+        price: 54.95,
+        image: "/images/products/cuts/rinder-kugel/product-1.png",
+        perfectFor: ["GRILLING", "STEAKHOUSE"],
       },
     ],
   },
