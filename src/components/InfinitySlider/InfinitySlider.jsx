@@ -64,11 +64,19 @@ const InfinitySlider = () => {
   const [paused, setPaused] = useState(false);
 
   useEffect(() => {
+    let intervalSpeed = 30;
+
+    if (typeof window !== "undefined") {
+      if (window.innerWidth < 768) {
+        intervalSpeed = 15; // Faster on small devices
+      }
+    }
+
     const interval = setInterval(() => {
       if (!paused) {
         setPosition((prevPosition) => prevPosition - 1);
       }
-    }, 30);
+    }, intervalSpeed);
 
     return () => clearInterval(interval);
   }, [paused]);
@@ -85,8 +93,8 @@ const InfinitySlider = () => {
   const displayLogos = [...logos, ...logos, ...logos];
 
   return (
-    <div className="w-full overflow-hidden  bg-[#fff5ee] py-8 rounded-lg shadow-md">
-      <h2 className="text-4xl md:text-5xl text-center font-bold mt-6  mb-12 uppercase tracking-wider text-[#F4C430]">
+    <div className="w-full overflow-hidden bg-[#fff5ee] py-8 rounded-lg shadow-md">
+      <h2 className="text-4xl md:text-5xl text-center font-bold mt-6 mb-12 uppercase tracking-wider text-[#F4C430]">
         Unsere Partner
       </h2>
 
@@ -107,10 +115,7 @@ const InfinitySlider = () => {
               key={`${logo.id}-${index}`}
               className="flex flex-col items-center justify-center mx-4 w-64 h-36"
             >
-              <div
-                className="flex items-center justify-center w-52 h-32  "
-                // style={{ backgroundColor: logo.color }}
-              >
+              <div className="flex items-center justify-center w-52 h-32">
                 <img
                   src={logo.url}
                   alt={`${logo.name} logo`}
