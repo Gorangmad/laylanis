@@ -99,7 +99,7 @@ const Header = () => {
                         </svg>
                       </div>
                       <h3 className="text-xl font-bold text-gray-800 mb-4">
-                       TEILSTÜCKE
+                        TEILSTÜCKE
                       </h3>
                       <Link
                         href="/products/cuts"
@@ -200,7 +200,7 @@ const Header = () => {
                       className="w-full h-full text-[#F4C430]"
                       fill="currentColor"
                     >
-                      <path d="M19.96 12L22 8.5L19.96 5H..." />
+                      <path d="M19.96 12L22 8.5L19.96 5H14.5L12.5 2H11.5L9.5 5H4.04L2 8.5L4.04 12L2 15.5L4.04 19H9.5L11.5 22H12.5L14.5 19H19.96L22 15.5L19.96 12ZM12 17.5C9.24 17.5 7 15.26 7 12.5C7 9.74 9.24 7.5 12 7.5C14.76 7.5 17 9.74 17 12.5C17 15.26 14.76 17.5 12 17.5Z" />
                     </svg>
                   </div>
                   <span className="text-gray-800 text-sm font-medium">

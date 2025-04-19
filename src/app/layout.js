@@ -12,7 +12,7 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "Laylani's",
-  description: "Premium Quality Butchers in Costa del Sol",
+  description: "Premium Quality Butchers in Germany",
 };
 
 export default function RootLayout({ children }) {
